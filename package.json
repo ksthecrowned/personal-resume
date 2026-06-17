@@ -7,10 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "preview": "npx serve ."
+    "preview": "serve ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
 }

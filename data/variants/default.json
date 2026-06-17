@@ -61,7 +61,7 @@
           "title": "Développement",
           "items": [
             "React, Next.js, Flutter, React Native — interfaces web et mobile en production",
-            "Node.js, NestJS, PostgreSQL, MySQL — APIs REST/temps réel et transactions"
+            "Node.js, NestJS, PostgreSQL — APIs REST/temps réel et transactions"
           ]
         },
         {
@@ -189,7 +189,7 @@
       },
       "profile": {
         "title": "Full-Stack Engineer & Technical Lead",
-        "summary": "Full-stack software engineer with 5+ years building and operating web and mobile platforms in production—e-commerce, SaaS, fintech, and media. Currently technical lead on Ride and DTMoney; background in multi-client consulting and agency team leadership. From design through operations: APIs, mobile, AWS, and production incident resolution."
+        "summary": "Full-stack engineer, 5+ years on web and mobile platforms in production—e-commerce, SaaS, fintech, media. Technical lead on Ride and DTMoney; multi-client consulting and agency team leadership. Design through ops: APIs, mobile, AWS, incident resolution."
       },
       "stats": [
         { "value": "+25", "label": "Projects" },
@@ -231,16 +231,16 @@
           "icon": "code",
           "title": "Development",
           "items": [
-            "React, Next.js, Flutter, React Native — web and mobile interfaces in production",
-            "Node.js, NestJS, PostgreSQL, MySQL — REST/real-time APIs and transactions"
+            "React, Next.js, Flutter, React Native — production web & mobile UIs",
+            "Node.js, NestJS, PostgreSQL — REST/real-time APIs & transactions"
           ]
         },
         {
           "icon": "cloud",
           "title": "Infrastructure & ecosystem",
           "items": [
-            "AWS, Docker, CI/CD — deployment, monitoring, and incident resolution",
-            "WordPress, PrestaShop — e-commerce, CMS, and third-party APIs"
+            "AWS, Docker, CI/CD — deploy, monitoring, incident resolution",
+            "WordPress, PrestaShop — e-commerce, CMS, third-party APIs"
           ]
         },
         {
@@ -274,13 +274,13 @@
           "role": "FULL-STACK DEVELOPER & PROJECT LEAD",
           "company": "LRC GROUP",
           "period": "February 2025 - Present",
-          "summary": "Project lead for Ride and DTMoney. Mobile and backend solutions in production for delivery and real-time transactions.",
+          "summary": "Project lead for Ride and DTMoney. Mobile and backend in production for delivery and real-time transactions.",
           "missions": [
-            "Project leadership: coordinated product, mobile, and backend on Ride and DTMoney; shipped 2 major releases.",
-            "Mobile: cross-platform features (Flutter, React Native) for 500+ active users.",
-            "Real time: Socket.IO event flows, perceived latency reduced by 25%.",
-            "Transactions: secured payment flows; 70% fewer critical production incidents.",
-            "Operations: NestJS/Node.js APIs, maintenance, and P1/P2 incident resolution."
+            "Leadership: product/mobile/backend coordination on Ride and DTMoney.",
+            "Mobile: Flutter/React Native features for 500+ users.",
+            "Real time: Socket.IO flows; perceived latency down 25%.",
+            "Transactions: secured financial flows; 70% fewer critical incidents.",
+            "Operations: NestJS/Node.js APIs, P1/P2 maintenance in production."
           ],
           "stack": [
             "React-Native",
