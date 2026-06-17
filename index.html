@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styve Maba — CV</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/print.css" />
+  </head>
+  <body>
+    <div class="preview-toolbar" aria-label="Outils de prévisualisation">
+      <div class="preview-toolbar__group">
+        <label class="preview-toolbar__label" for="variant-select">Poste</label>
+        <select class="preview-toolbar__select" id="variant-select"></select>
+      </div>
+      <div class="preview-toolbar__group">
+        <label class="preview-toolbar__label" for="lang-select">Langue</label>
+        <select class="preview-toolbar__select" id="lang-select"></select>
+      </div>
+      <button
+        type="button"
+        class="preview-toolbar__btn"
+        id="clip-toggle"
+        aria-pressed="true"
+      >
+        Rognage A4 : activé
+      </button>
+    </div>
+    <main class="cv-page cv-page--clip" id="cv-page">
+      <aside class="col-left">
+        <section class="cv-section cv-section--profile">
+          <h2 class="section-label" data-section="profile"></h2>
+
+          <div class="cv-card cv-card--profile">
+            <div class="identity">
+              <div class="identity__photo-wrap">
+                <img
+                  class="identity__photo"
+                  id="profile-photo"
+                  src="assets/photo.png"
+                  alt=""
+                  width="324"
+                  height="324"
+                />
+              </div>
+              <h1 class="identity__name" id="profile-name"></h1>
+              <p class="identity__title" id="profile-title"></p>
+              <hr class="identity__divider" aria-hidden="true" />
+            </div>
+            <p class="profile-text" id="profile-summary"></p>
+          </div>
+
+          <div class="stats-row" id="stats-container"></div>
+
+          <div class="cv-card cv-card--contacts">
+            <div class="contacts" id="contacts-container"></div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="section-label" data-section="skills"></h2>
+          <div class="cv-card cv-card--skills" id="skills-container"></div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="section-label" data-section="hobbies"></h2>
+          <div class="cv-card cv-card--hobbies">
+            <ul class="hobbies-list" id="hobbies-container"></ul>
+          </div>
+        </section>
+      </aside>
+
+      <section class="col-right right-space">
+        <section class="cv-section">
+          <h2 class="section-label" data-section="experience"></h2>
+          <div class="cv-card cv-card--experience">
+            <div id="experiences-container"></div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="section-label" data-section="education"></h2>
+          <div
+            class="cv-card cv-card--education"
+            id="education-container"
+          ></div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="section-label" data-section="formations"></h2>
+          <div class="cv-card cv-card--formations">
+            <ul class="cert-list" id="certifications-container"></ul>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="js/render.js"></script>
+    <script src="js/preview-controls.js"></script>
+  </body>
+</html>

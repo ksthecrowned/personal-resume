@@ -1,0 +1,11 @@
+{
+  "variants": [
+    {
+      "id": "default",
+      "label": "CV par défaut — Full-Stack",
+      "targetRole": "Ingénieur Full-Stack & Lead Technique",
+      "createdAt": "2026-06-17",
+      "previewUrl": "/?variant=default&lang=fr"
+    }
+  ]
+}

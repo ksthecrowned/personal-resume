@@ -1,0 +1,56 @@
+@media print {
+  body {
+    background: none;
+    padding: 0;
+    display: block;
+  }
+
+  .preview-toolbar {
+    display: none !important;
+  }
+
+  .cv-page {
+    width: 210mm;
+    height: 297mm;
+    max-height: 297mm;
+    margin: 0;
+    overflow: hidden;
+    background: var(--color-page-bg);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv-card {
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .load-error {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .experience-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .stat-badge,
+  .contact-item__icon,
+  .hobby-icon,
+  .experience-card__badge,
+  .identity__blob {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}

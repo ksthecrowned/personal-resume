@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "profile": "Informations personnelles & contacts",
+    "skills": "Compétences techniques",
+    "hobbies": "Loisirs",
+    "experience": "Expérience",
+    "education": "Éducation",
+    "formations": "Formations"
+  },
+  "experience": {
+    "missions": "Missions :",
+    "clients": "Clients principaux :",
+    "projects": "Projets majeurs :",
+    "evolutions": "Évolutions :",
+    "stack": "Stack :"
+  },
+  "badges": {
+    "active": "En cours"
+  }
+}

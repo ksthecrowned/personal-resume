@@ -1,0 +1,78 @@
+{
+  "experiences": [
+    {
+      "role": "DÉVELOPPEUR FULL-STACK & RESPONSABLE PROJETS",
+      "company": "LRC GROUP",
+      "period": "Février 2025 - Présent",
+      "summary": "Responsable des projets Ride et DTMoney. Solutions mobiles et back-end en production pour livraison et transactions temps réel.",
+      "missions": [
+        "Pilotage : coordination produit/mobile/back-end sur Ride et DTMoney.",
+        "Mobile : fonctionnalités Flutter/React Native pour +500 utilisateurs.",
+        "Temps réel : flux Socket.IO ; latence perçue réduite de 25%.",
+        "Transactions : flux financiers sécurisés ; -70 % d'incidents critiques.",
+        "Exploitation : APIs NestJS/Node.js, maintenance P1/P2 en production."
+      ],
+      "stack": [
+        "React-Native",
+        "Next.js",
+        "Flutter",
+        "Node.js",
+        "NestJS",
+        "Socket.IO",
+        "PostgreSQL"
+      ],
+      "badge": "En cours"
+    },
+    {
+      "role": "CONSULTANT DÉVELOPPEUR FULL-STACK WEB & MOBILE",
+      "period": "Octobre 2023 - Février 2025",
+      "summary": "Consultant full-stack : conception et mise en production de plateformes web et mobiles pour clients locaux et internationaux.",
+      "clients": [
+        { "name": "XKS Group", "url": "https://www.xksgroup.com" },
+        { "name": "Webtinix", "url": "https://webtinix.com" }
+      ],
+      "missions": [
+        "Multi-clients : 10+ plateformes web/mobile pour XKS Group et Webtinix.",
+        "Médias : contribution à MyTélévision et D5News (100 k+ utilisateurs).",
+        "Sites vitrines & e-commerce : corporate, boutiques et apps métier.",
+        "Production : APIs NestJS, PostgreSQL et déploiements en production."
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "NestJS",
+        "PostgreSQL",
+        "AWS",
+        "Flutter"
+      ],
+      "badge": "+ 2 ans"
+    },
+    {
+      "role": "DÉVELOPPEUR FRONT-END & ADJOINT AU DIRECTEUR TECHNIQUE",
+      "company": "WEBTIX",
+      "period": "Septembre 2021 - Octobre 2023",
+      "summary": "Plateformes web en production pour clients locaux et internationaux. Montée en responsabilités : Team Lead puis adjoint au Directeur Technique.",
+      "evolutions": [
+        "Team Lead Developer — Février 2022 - Février 2023",
+        "Adjoint au Directeur Technique — Mars 2023 - Octobre 2023"
+      ],
+      "missions": [
+        "Sites e-commerce, SaaS et fort trafic : 7 projets mis en production.",
+        "Front-end : React/Next.js et intégration CMS (WordPress, PrestaShop).",
+        "Encadrement : équipe de 5 ; Team Lead puis adjoint au DT.",
+        "Exploitation : déploiement, supervision et maintenance en production."
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "WordPress",
+        "PrestaShop",
+        "PHP",
+        "Laravel"
+      ],
+      "badge": "+ 2 ans"
+    }
+  ]
+}

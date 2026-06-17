@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Couleurs — PDF « Kaiser Styve - CV (3) » */
+  --color-page-bg: #fafbfc;
+  --color-card-bg: #fefefe;
+  --color-bg-muted: #fafbfc;
+  --color-primary: #1e1950;
+  --color-accent: #422fbd;
+  --color-accent-soft: rgba(66, 47, 189, 0.2);
+  --color-orange: #ff893a;
+  --color-orange-soft: rgba(255, 137, 58, 0.18);
+  --color-text: #585665;
+  --color-text-muted: #8b899d;
+  --color-stat-gray: #8b899d;
+  --color-badge-purple-bg: rgba(66, 47, 189, 0.14);
+  --color-badge-orange-bg: rgba(255, 137, 58, 0.22);
+
+  --font-family: "Inter", sans-serif;
+
+  /* Typographie — mesures extraites du PDF (pt), légèrement resserrées pour tenir sur 1 page A4 */
+  --font-size-name: 10.5pt;
+  --font-size-subtitle: 8.7pt;
+  --font-size-section: 10.2pt;
+  --font-size-body: 8.7pt;
+  --font-size-profile-bio: 9pt;
+  --font-size-body-emphasis: 9.3pt;
+  --font-size-contact: 9pt;
+  --font-size-role: 9pt;
+  --font-size-skill-cat: 9pt;
+  --font-size-label: 8.7pt;
+  --font-size-stat: 16pt;
+  --font-size-stat-label: 8.5pt;
+
+  --line-height-body: 1.35;
+  --letter-spacing-tight: -0.05em;
+
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --col-left: 36%;
+  --col-right: 64%;
+  --page-padding: 3mm;
+  --col-gap: 3mm;
+  --section-gap: 3mm;
+  --card-radius: 10px;
+  --card-padding: 4.5mm;
+  --card-shadow: 0 4px 12px rgba(88, 86, 101, 0.08);
+  --bullet-indent: 3mm;
+  --photo-size: 26mm;
+  --profile-blob-width: 34mm;
+  --profile-gap-photo-name: 2.5mm;
+  --profile-gap-title-divider: 2.5mm;
+  --profile-gap-divider-bio: 2.5mm;
+}

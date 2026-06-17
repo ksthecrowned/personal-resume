@@ -1,0 +1,555 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10pt;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background: #e0e0e4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+}
+
+/* Barre d'outils preview (masquée à l'impression) */
+.preview-toolbar {
+  width: var(--page-width);
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.preview-toolbar__group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.preview-toolbar__label {
+  font-size: 8.8pt;
+  color: var(--color-primary);
+}
+
+.preview-toolbar__select {
+  font-family: var(--font-family);
+  font-size: 8.8pt;
+  color: var(--color-primary);
+  background: var(--color-card-bg);
+  border: 1px solid rgba(30, 25, 80, 0.12);
+  border-radius: 8px;
+  padding: 5px 8px;
+  min-width: 112px;
+}
+
+.preview-toolbar__btn {
+  font-family: var(--font-family);
+  font-size: 9pt;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: var(--color-card-bg);
+  border: 1px solid rgba(30, 25, 80, 0.12);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(88, 86, 101, 0.1);
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.preview-toolbar__btn:hover {
+  background: #fff;
+  border-color: var(--color-accent);
+}
+
+.preview-toolbar__btn[aria-pressed="true"] {
+  color: #fff;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Page A4 fixe */
+.cv-page {
+  width: var(--page-width);
+  max-width: 100%;
+  height: var(--page-height);
+  background: var(--color-page-bg);
+  display: grid;
+  grid-template-columns: var(--col-left) var(--col-right);
+  column-gap: var(--col-gap);
+  padding: var(--page-padding);
+  align-content: start;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.cv-page--clip {
+  max-height: var(--page-height);
+  overflow: hidden;
+}
+
+.cv-page:not(.cv-page--clip) {
+  height: auto;
+  max-height: none;
+  min-height: var(--page-height);
+  overflow: visible;
+}
+
+/* Section : titre hors carte + carte blanche */
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.cv-section--profile {
+  gap: 2.5mm;
+}
+
+.section-label {
+  font-size: var(--font-size-section);
+  font-weight: 400;
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.cv-card {
+  background: var(--color-card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--card-padding);
+}
+
+.col-left,
+.col-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.right-space {
+  padding-right: 3mm;
+}
+
+/* ── Profile card (PDF : colonne centrée) ── */
+.cv-card--profile {
+  text-align: center;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1mm;
+}
+
+.identity__photo-wrap {
+  position: relative;
+  width: var(--profile-blob-width);
+  height: calc(var(--profile-blob-width) * 0.68);
+  margin-bottom: var(--profile-gap-photo-name);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.identity__photo {
+  position: relative;
+  width: var(--photo-size);
+  height: var(--photo-size);
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.identity__name {
+  font-size: var(--font-size-name);
+  font-weight: 400;
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.identity__title {
+  font-size: var(--font-size-subtitle);
+  font-weight: 400;
+  color: var(--color-orange);
+  margin-top: 1mm;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.identity__divider {
+  width: 25%;
+  max-width: 28mm;
+  border: none;
+  border-top: 1px solid rgba(88, 86, 101, 0.24);
+  margin: var(--profile-gap-title-divider) 0 var(--profile-gap-divider-bio);
+}
+
+.profile-text {
+  font-size: var(--font-size-profile-bio);
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding: 0 1mm;
+}
+
+/* Stats — 3 cartes égales sur fond gris, entre profil et contacts */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2mm;
+}
+
+.stat-badge {
+  border-radius: 6px;
+  padding: 2.5mm;
+  text-align: left;
+  min-height: 14mm;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.stat-badge--purple {
+  background: var(--color-accent);
+}
+
+.stat-badge--orange {
+  background: var(--color-orange);
+}
+
+.stat-badge--gray {
+  background: var(--color-stat-gray);
+}
+
+.stat-badge__value {
+  font-size: var(--font-size-stat);
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.stat-badge__label {
+  font-size: var(--font-size-stat-label);
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0.5mm;
+}
+
+/* Contacts — icônes Figma (img) ou génériques (svg) */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+  font-size: var(--font-size-contact);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a.contact-item:hover {
+  color: var(--color-accent);
+}
+
+.contact-item__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item__icon img {
+  display: block;
+  width: 5.5mm;
+  height: 5.5mm;
+}
+
+/* Skills */
+.skill-block {
+  margin-bottom: 2.5mm;
+}
+
+.skill-block:last-child {
+  margin-bottom: 0;
+}
+
+.skill-block__header {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  margin-bottom: 1.2mm;
+}
+
+.skill-block__icon {
+  width: 4.5mm;
+  height: 4.5mm;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.skill-block__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-block__title {
+  font-size: var(--font-size-skill-cat);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.skill-block__list {
+  list-style: none;
+  padding-left: 3mm;
+}
+
+.skill-block__list li {
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+  margin-bottom: 0.6mm;
+  position: relative;
+  padding-left: 3.5mm;
+}
+
+/* Puces cercle creux Figma */
+.skill-block__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 1.8mm;
+  height: 1.8mm;
+  border: 1.2px solid var(--color-accent);
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Hobbies — horizontal, icône au-dessus du label */
+.hobbies-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2mm;
+}
+
+.hobbies-list li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5mm;
+  text-align: center;
+}
+
+.hobby-icon {
+  display: block;
+  width: auto;
+  height: 12mm;
+  background: none;
+  border-radius: 0;
+}
+
+.hobby-label {
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+}
+
+/* ── Experience (dans une seule carte) ── */
+.experience-card {
+  position: relative;
+  page-break-inside: avoid;
+  padding-bottom: 3mm;
+  margin-bottom: 3mm;
+  border-bottom: 1px solid rgba(139, 137, 157, 0.25);
+}
+
+.experience-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-card__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--font-size-label);
+  font-weight: 700;
+  padding: 0.8mm 2.5mm;
+  border-radius: 4px;
+  margin-top: 4mm;
+}
+
+.experience-card__badge--duration {
+  color: var(--color-accent);
+  background: var(--color-badge-purple-bg);
+}
+
+.experience-card__badge--active {
+  color: var(--color-orange);
+  background: var(--color-badge-orange-bg);
+}
+
+.experience-card__role {
+  font-size: var(--font-size-role);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  padding-right: 0;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.experience-card__period {
+  font-size: var(--font-size-body);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0.8mm 0 1.5mm;
+}
+
+.experience-card__summary {
+  font-size: var(--font-size-body-emphasis);
+  color: var(--color-text);
+  margin-bottom: 1.5mm;
+}
+
+.experience-card__label {
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 1.2mm 0 0.8mm;
+}
+
+.experience-card__list,
+.experience-card__clients {
+  list-style: none;
+  padding-left: var(--bullet-indent);
+  margin-bottom: 1.2mm;
+}
+
+.experience-card__list li,
+.experience-card__clients li {
+  font-size: var(--font-size-body-emphasis);
+  color: var(--color-text);
+  margin-bottom: 0.6mm;
+  position: relative;
+  padding-left: 3.5mm;
+}
+
+/* Puces cercle creux */
+.experience-card__list li::before,
+.experience-card__clients li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 1.8mm;
+  height: 1.8mm;
+  border: 1.2px solid var(--color-accent);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.experience-card__clients a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.experience-card__stack {
+  font-size: var(--font-size-label);
+  margin-top: 1mm;
+}
+
+.experience-card__stack-label {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.experience-card__stack-tech {
+  color: var(--color-text);
+}
+
+/* Education & formations */
+.edu-item {
+  margin-bottom: 2mm;
+}
+
+.edu-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-item__title {
+  font-size: var(--font-size-role);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.edu-item__place {
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+}
+
+.cert-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.cert-list__item {
+  font-size: var(--font-size-role);
+  color: var(--color-primary);
+}
+
+.cert-list li {
+  font-size: var(--font-size-role);
+  color: var(--color-primary);
+}
+
+.load-error {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 3mm;
+  border-radius: 3px;
+  font-size: 8pt;
+}
+
+.load-error code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.5mm 1mm;
+  border-radius: 2px;
+}

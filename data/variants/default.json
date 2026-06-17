@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "id": "default",
+    "label": "CV par défaut — Full-Stack",
+    "defaultLocale": "fr",
+    "availableLocales": ["fr", "en"],
+    "createdAt": "2026-06-17"
+  },
+  "locales": {
+    "fr": {
+      "meta": {
+        "pageTitle": "Styve Maba — CV",
+        "targetRole": "Ingénieur Full-Stack & Lead Technique"
+      },
+      "identity": {
+        "name": "Styve Maba",
+        "photoAlt": "Styve Maba"
+      },
+      "profile": {
+        "title": "Ingénieur Full-Stack & Lead Technique",
+        "summary": "Ingénieur logiciel full-stack, avec plus de 5 ans d'expérience sur des plateformes web et mobiles en production — e-commerce, SaaS, fintech et médias. Aujourd'hui responsable technique sur Ride et DTMoney ; parcours consulting multi-clients et encadrement d'équipes en agence. De la conception à l'exploitation : APIs, mobile, cloud AWS et résolution d'incidents."
+      },
+      "stats": [
+        { "value": "+25", "label": "Projets" },
+        { "type": "accent" },
+        { "value": "+5ans", "label": "D'expérience", "color": "gray" }
+      ],
+      "contacts": [
+        {
+          "type": "email",
+          "href": "mailto:kaiserstyve2@gmail.com",
+          "text": "kaiserstyve2@gmail.com",
+          "icon": "contact-email.svg"
+        },
+        {
+          "type": "phone",
+          "text": "(+242) 06 515 23 74 / 055989707",
+          "icon": "contact-phone.svg"
+        },
+        {
+          "type": "location",
+          "text": "Pointe-Noire, Congo-Brazzaville",
+          "icon": "contact-location.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.linkedin.com/in/kaiser-styve",
+          "text": "linkedin.com/in/kaiser-styve",
+          "icon": "contact-linkedin.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.github.com/ksthecrowned",
+          "text": "github.com/ksthecrowned",
+          "icon": "contact-github.svg"
+        }
+      ],
+      "skills": [
+        {
+          "icon": "code",
+          "title": "Développement",
+          "items": [
+            "React, Next.js, Flutter, React Native — interfaces web et mobile en production",
+            "Node.js, NestJS, PostgreSQL, MySQL — APIs REST/temps réel et transactions"
+          ]
+        },
+        {
+          "icon": "cloud",
+          "title": "Infrastructure & écosystème",
+          "items": [
+            "AWS, Docker, CI/CD — déploiement, supervision et résolution d'incidents",
+            "WordPress, PrestaShop — e-commerce, CMS et API tierces"
+          ]
+        },
+        {
+          "icon": "languages",
+          "title": "Langues",
+          "items": ["Français — langue maternelle", "Anglais — conversationnel"]
+        }
+      ],
+      "hobbies": [
+        { "icon": "hobby-mangas.svg", "label": "Veille tech" },
+        { "icon": "hobby-jeux.svg", "label": "Bénévolat" },
+        { "icon": "hobby-programmation.svg", "label": "Open source" }
+      ],
+      "education": [
+        {
+          "title": "Études en Sciences Économiques - Niveau Licence II",
+          "place": "Université Marien Ngouabi - 2017 — 2020"
+        },
+        {
+          "title": "Baccalauréat Série D",
+          "place": "Lycée Savorgnan de Brazza - 2016 — 2017"
+        }
+      ],
+      "certifications": [
+        "Complete Web Developer — Zero To Mastery",
+        "Advanced CSS & Sass (Flexbox, Grid, Animations) — Udemy",
+        "Learn Ethical Hacking From Scratch — Udemy"
+      ],
+      "experiences": [
+        {
+          "role": "DÉVELOPPEUR FULL-STACK & RESPONSABLE PROJETS",
+          "company": "LRC GROUP",
+          "period": "Février 2025 - Présent",
+          "summary": "Responsable des projets Ride et DTMoney. Solutions mobiles et back-end en production pour livraison et transactions temps réel.",
+          "missions": [
+            "Pilotage : coordination produit/mobile/back-end sur Ride et DTMoney.",
+            "Mobile : fonctionnalités Flutter/React Native pour +500 utilisateurs.",
+            "Temps réel : flux Socket.IO ; latence perçue réduite de 25%.",
+            "Transactions : flux financiers sécurisés ; -70 % d'incidents critiques.",
+            "Exploitation : APIs NestJS/Node.js, maintenance P1/P2 en production."
+          ],
+          "stack": [
+            "React-Native",
+            "Next.js",
+            "Flutter",
+            "Node.js",
+            "NestJS",
+            "Socket.IO",
+            "PostgreSQL"
+          ],
+          "badge": "En cours",
+          "badgeType": "active"
+        },
+        {
+          "role": "CONSULTANT DÉVELOPPEUR FULL-STACK WEB & MOBILE",
+          "period": "Octobre 2023 - Février 2025",
+          "summary": "Consultant full-stack : conception et mise en production de plateformes web et mobiles pour clients locaux et internationaux.",
+          "clients": [
+            { "name": "XKS Group", "url": "https://www.xksgroup.com" },
+            { "name": "Webtinix", "url": "https://webtinix.com" }
+          ],
+          "missions": [
+            "Multi-clients : 10+ plateformes web/mobile pour XKS Group et Webtinix.",
+            "Médias : contribution à MyTélévision et D5News (100 k+ utilisateurs).",
+            "Sites vitrines & e-commerce : corporate, boutiques et apps métier.",
+            "Production : APIs NestJS, PostgreSQL et déploiements en production."
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "NestJS",
+            "PostgreSQL",
+            "AWS",
+            "Flutter"
+          ],
+          "badge": "+ 2 ans",
+          "badgeType": "duration"
+        },
+        {
+          "role": "DÉVELOPPEUR FRONT-END & ADJOINT AU DIRECTEUR TECHNIQUE",
+          "company": "WEBTIX",
+          "period": "Septembre 2021 - Octobre 2023",
+          "summary": "Plateformes web en production pour clients locaux et internationaux. Montée en responsabilités : Team Lead puis adjoint au Directeur Technique.",
+          "evolutions": [
+            "Team Lead Developer — Février 2022 - Février 2023",
+            "Adjoint au Directeur Technique — Mars 2023 - Octobre 2023"
+          ],
+          "missions": [
+            "Sites e-commerce, SaaS et fort trafic : 7 projets mis en production.",
+            "Front-end : React/Next.js et intégration CMS (WordPress, PrestaShop).",
+            "Encadrement : équipe de 5 ; Team Lead puis adjoint au DT.",
+            "Exploitation : déploiement, supervision et maintenance en production."
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "WordPress",
+            "PrestaShop",
+            "PHP",
+            "Laravel"
+          ],
+          "badge": "+ 2 ans",
+          "badgeType": "duration"
+        }
+      ]
+    },
+    "en": {
+      "meta": {
+        "pageTitle": "Styve Maba — Resume",
+        "targetRole": "Full-Stack Engineer & Technical Lead"
+      },
+      "identity": {
+        "name": "Styve Maba",
+        "photoAlt": "Styve Maba"
+      },
+      "profile": {
+        "title": "Full-Stack Engineer & Technical Lead",
+        "summary": "Full-stack software engineer with 5+ years building and operating web and mobile platforms in production—e-commerce, SaaS, fintech, and media. Currently technical lead on Ride and DTMoney; background in multi-client consulting and agency team leadership. From design through operations: APIs, mobile, AWS, and production incident resolution."
+      },
+      "stats": [
+        { "value": "+25", "label": "Projects" },
+        { "type": "accent" },
+        { "value": "+5yrs", "label": "Experience", "color": "gray" }
+      ],
+      "contacts": [
+        {
+          "type": "email",
+          "href": "mailto:kaiserstyve2@gmail.com",
+          "text": "kaiserstyve2@gmail.com",
+          "icon": "contact-email.svg"
+        },
+        {
+          "type": "phone",
+          "text": "(+242) 06 515 23 74 / 055989707",
+          "icon": "contact-phone.svg"
+        },
+        {
+          "type": "location",
+          "text": "Pointe-Noire, Republic of the Congo",
+          "icon": "contact-location.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.linkedin.com/in/kaiser-styve",
+          "text": "linkedin.com/in/kaiser-styve",
+          "icon": "contact-linkedin.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.github.com/ksthecrowned",
+          "text": "github.com/ksthecrowned",
+          "icon": "contact-github.svg"
+        }
+      ],
+      "skills": [
+        {
+          "icon": "code",
+          "title": "Development",
+          "items": [
+            "React, Next.js, Flutter, React Native — web and mobile interfaces in production",
+            "Node.js, NestJS, PostgreSQL, MySQL — REST/real-time APIs and transactions"
+          ]
+        },
+        {
+          "icon": "cloud",
+          "title": "Infrastructure & ecosystem",
+          "items": [
+            "AWS, Docker, CI/CD — deployment, monitoring, and incident resolution",
+            "WordPress, PrestaShop — e-commerce, CMS, and third-party APIs"
+          ]
+        },
+        {
+          "icon": "languages",
+          "title": "Languages",
+          "items": ["French — native", "English — conversational"]
+        }
+      ],
+      "hobbies": [
+        { "icon": "hobby-mangas.svg", "label": "Tech watch" },
+        { "icon": "hobby-jeux.svg", "label": "Volunteering" },
+        { "icon": "hobby-programmation.svg", "label": "Open source" }
+      ],
+      "education": [
+        {
+          "title": "Economics Studies — Level Bachelor II",
+          "place": "Marien Ngouabi University — 2017 — 2020"
+        },
+        {
+          "title": "High School Diploma — Science Track D",
+          "place": "Lycée Savorgnan de Brazza — 2016 — 2017"
+        }
+      ],
+      "certifications": [
+        "Complete Web Developer — Zero To Mastery",
+        "Advanced CSS & Sass (Flexbox, Grid, Animations) — Udemy",
+        "Learn Ethical Hacking From Scratch — Udemy"
+      ],
+      "experiences": [
+        {
+          "role": "FULL-STACK DEVELOPER & PROJECT LEAD",
+          "company": "LRC GROUP",
+          "period": "February 2025 - Present",
+          "summary": "Project lead for Ride and DTMoney. Mobile and backend solutions in production for delivery and real-time transactions.",
+          "missions": [
+            "Project leadership: coordinated product, mobile, and backend on Ride and DTMoney; shipped 2 major releases.",
+            "Mobile: cross-platform features (Flutter, React Native) for 500+ active users.",
+            "Real time: Socket.IO event flows, perceived latency reduced by 25%.",
+            "Transactions: secured payment flows; 70% fewer critical production incidents.",
+            "Operations: NestJS/Node.js APIs, maintenance, and P1/P2 incident resolution."
+          ],
+          "stack": [
+            "React-Native",
+            "Next.js",
+            "Flutter",
+            "Node.js",
+            "NestJS",
+            "Socket.IO",
+            "PostgreSQL"
+          ],
+          "badge": "Current",
+          "badgeType": "active"
+        },
+        {
+          "role": "FULL-STACK WEB & MOBILE CONSULTANT",
+          "period": "October 2023 - February 2025",
+          "summary": "Full-stack consultant: delivered web and mobile platforms for local and international clients from scoping through production.",
+          "clients": [
+            { "name": "XKS Group", "url": "https://www.xksgroup.com" },
+            { "name": "Webtinix", "url": "https://webtinix.com" }
+          ],
+          "missions": [
+            "Multi-client: 10+ web/mobile platforms for XKS Group and Webtinix.",
+            "Media: contributed to MyTélévision and D5News (100k+ users).",
+            "Showcase sites & e-commerce: corporate sites, stores, and business apps.",
+            "Production: NestJS APIs, PostgreSQL, and deployments in production."
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "NestJS",
+            "PostgreSQL",
+            "AWS",
+            "Flutter"
+          ],
+          "badge": "+ 2 yrs",
+          "badgeType": "duration"
+        },
+        {
+          "role": "FRONT-END DEVELOPER & DEPUTY TECHNICAL DIRECTOR",
+          "company": "WEBTIX",
+          "period": "September 2021 - October 2023",
+          "summary": "Web platforms in production for local and international clients. Progressive growth: Team Lead then deputy technical director.",
+          "evolutions": [
+            "Team Lead Developer — February 2022 - February 2023",
+            "Deputy Technical Director — March 2023 - October 2023"
+          ],
+          "missions": [
+            "E-commerce, SaaS, and high-traffic sites: 4 projects shipped to production.",
+            "Frontend: React/Next.js and CMS integration (WordPress, PrestaShop).",
+            "Leadership: team of 5 people (Team Lead 2022–2023), then deputy technical director support.",
+            "Production: deployment, monitoring, and corrective maintenance."
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "WordPress",
+            "PrestaShop",
+            "PHP",
+            "Laravel"
+          ],
+          "badge": "+ 2 yrs",
+          "badgeType": "duration"
+        }
+      ]
+    }
+  }
+}
