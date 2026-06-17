@@ -7,6 +7,10 @@ Le projet est statique (HTML/CSS/JS) et piloté par JSON:
 - libellés d'interface (`data/i18n/*.json`)
 - rendu dynamique (`js/render.js`)
 
+## Aperçu du rendu
+
+![Aperçu du CV](assets/cv-preview.png)
+
 ## Prévisualisation
 
 ```bash
@@ -104,10 +108,10 @@ Exportez votre photo depuis Figma (node `4:635`) et placez-la dans `assets/photo
 
 ## Couleurs (Figma frame 4:4)
 
-| Token | Valeur | Usage |
-|-------|--------|-------|
-| `--color-primary` | `#1e1950` | Titres, nom |
-| `--color-accent` | `#422fbd` | Sections, icônes |
-| `--color-orange` | `#ff893a` | Titre sous le nom |
-| `--color-text` | `#585665` | Corps de texte |
-| `--font-family` | Inter | Police Figma |
+| Token | Valeur | Surbrillance | Usage |
+|-------|--------|--------------|-------|
+| `--color-primary` | `#1e1950` | <span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#1e1950;border:1px solid #ddd;vertical-align:middle;"></span> | Titres, nom |
+| `--color-accent` | `#422fbd` | <span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#422fbd;border:1px solid #ddd;vertical-align:middle;"></span> | Sections, icônes |
+| `--color-orange` | `#ff893a` | <span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#ff893a;border:1px solid #ddd;vertical-align:middle;"></span> | Titre sous le nom |
+| `--color-text` | `#585665` | <span style="display:inline-block;width:14px;height:14px;border-radius:3px;background:#585665;border:1px solid #ddd;vertical-align:middle;"></span> | Corps de texte |
+| `--font-family` | Inter | — | Police Figma |
