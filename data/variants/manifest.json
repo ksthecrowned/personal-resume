@@ -6,6 +6,13 @@
       "targetRole": "Ingénieur Full-Stack & Lead Technique",
       "createdAt": "2026-06-17",
       "previewUrl": "/?variant=default&lang=fr"
+    },
+    {
+      "id": "charge-it-dev-web",
+      "label": "Chargé IT & Développement Web — Pointe-Noire",
+      "targetRole": "Chargé IT & Développement Web",
+      "createdAt": "2026-06-17",
+      "previewUrl": "/?variant=charge-it-dev-web&lang=fr"
     }
   ]
 }

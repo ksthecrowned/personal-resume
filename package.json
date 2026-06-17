@@ -7,13 +7,16 @@
     "doc": "docs"
   },
   "scripts": {
-    "preview": "serve ."
+    "preview": "serve .",
+    "export:pdf": "node scripts/export-pdfs.mjs",
+    "export:pdf:single": "node scripts/generate-cv-pdf.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "playwright-core": "^1.49.1",
     "serve": "^14.2.4"
   }
 }

@@ -1,24 +1,25 @@
 {
   "meta": {
-    "id": "default",
-    "label": "CV par défaut — Full-Stack",
+    "id": "charge-it-dev-web",
+    "label": "Chargé IT & Développement Web — Pointe-Noire",
     "defaultLocale": "fr",
     "availableLocales": ["fr", "en"],
-    "createdAt": "2026-06-17"
+    "createdAt": "2026-06-17",
+    "notes": "JD : Chargé(e) IT & Développement Web — site web, parc IT, Odoo, Job Board, support, sécurité. Mots-clés ATS : HTML, CSS, JavaScript, PHP, WordPress, Symfony, Laravel, Odoo, MySQL, PostgreSQL, CMS, SEO, support, cybersécurité."
   },
   "locales": {
     "fr": {
       "meta": {
-        "pageTitle": "Styve Maba — CV",
-        "targetRole": "Ingénieur Full-Stack & Lead Technique"
+        "pageTitle": "Styve Maba — CV IT & Web",
+        "targetRole": "Chargé IT & Développement Web"
       },
       "identity": {
         "name": "Styve Maba",
         "photoAlt": "Styve Maba"
       },
       "profile": {
-        "title": "Ingénieur Full-Stack & Lead Technique",
-        "summary": "Ingénieur logiciel full-stack, avec plus de 5 ans d'expérience sur des plateformes web et mobiles en production; e-commerce, SaaS, fintech et médias. Aujourd'hui responsable technique sur Ride et DTMoney ; parcours consulting multi-clients et encadrement d'équipes en agence. De la conception à l'exploitation : APIs, mobile, cloud AWS et résolution d'incidents."
+        "title": "Chargé IT & Développement Web",
+        "summary": "Chargé IT et développement web, 5+ ans d'expérience sur sites web, CMS et plateformes en production; SaaS et outils métiers. Agence, consulting : maintenance, évolutions, support utilisateurs et accompagnement équipes. HTML/CSS/JS, PHP, WordPress, Laravel, Symfony, Odoo, PostgreSQL/MySQL ; veille cybersécurité."
       },
       "stats": [
         { "value": "+25", "label": "Projets" },
@@ -58,18 +59,18 @@
       "skills": [
         {
           "icon": "code",
-          "title": "Développement",
+          "title": "Développement web",
           "items": [
-            "React, Next.js, Flutter, React Native — interfaces web et mobile en production",
-            "Node.js, NestJS, PostgreSQL — APIs REST/temps réel et transactions"
+            "HTML, CSS, JavaScript, PHP — création et maintenance de sites web",
+            "WordPress, Laravel, Symfony, CMS — évolutions et intégrations métier"
           ]
         },
         {
           "icon": "cloud",
-          "title": "Infrastructure & écosystème",
+          "title": "Infrastructure & support IT",
           "items": [
-            "AWS, Docker, CI/CD — déploiement, supervision et résolution d'incidents",
-            "WordPress, PrestaShop — e-commerce, CMS et API tierces"
+            "Odoo — administration et optimisation des processus internes",
+            "Support utilisateurs, procédures et documentation ; PostgreSQL, MySQL, AWS, Docker"
           ]
         },
         {
@@ -103,22 +104,22 @@
           "role": "DÉVELOPPEUR FULL-STACK & RESPONSABLE PROJETS",
           "company": "LRC GROUP",
           "period": "Février 2025 - Présent",
-          "summary": "Responsable des projets Ride et DTMoney. Solutions mobiles et back-end en production pour livraison et transactions temps réel.",
+          "summary": "Maintenance et évolution des plateformes web et outils numériques de l'entreprise. Support technique et amélioration continue des systèmes.",
           "missions": [
-            "Pilotage : coordination produit/mobile/back-end sur Ride et DTMoney.",
-            "Mobile : fonctionnalités Flutter/React Native pour +500 utilisateurs.",
-            "Temps réel : flux Socket.IO ; latence perçue réduite de 25%.",
-            "Transactions : flux financiers sécurisés ; -70 % d'incidents critiques.",
-            "Exploitation : APIs NestJS/Node.js, maintenance P1/P2 en production."
+            "Sites & outils web : maintenance et évolution des plateformes.",
+            "Support technique : assistance utilisateurs et résolution d'incidents.",
+            "Performance & SEO : suivi du site, optimisations et accompagnement.",
+            "Bases de données : PostgreSQL, MySQL — intégrité et suivi.",
+            "Sécurité : veille, mises à jour et correctifs en production."
           ],
           "stack": [
-            "React-Native",
             "Next.js",
-            "Flutter",
             "Node.js",
             "NestJS",
-            "Socket.IO",
-            "PostgreSQL"
+            "PostgreSQL",
+            "MySQL",
+            "React",
+            "AWS"
           ],
           "badge": "En cours",
           "badgeType": "active"
@@ -126,25 +127,26 @@
         {
           "role": "CONSULTANT DÉVELOPPEUR FULL-STACK WEB & MOBILE",
           "period": "Octobre 2023 - Février 2025",
-          "summary": "Consultant full-stack : conception et mise en production de plateformes web et mobiles pour clients locaux et internationaux.",
+          "summary": "Conception, maintenance et évolution de sites web pour clients locaux et internationaux. Collaboration avec les équipes clientes sur contenus.",
           "clients": [
             { "name": "XKS Group", "url": "https://www.xksgroup.com" },
             { "name": "Webtinix", "url": "https://webtinix.com" }
           ],
           "missions": [
-            "Multi-clients : 10+ plateformes web/mobile pour XKS Group et Webtinix.",
-            "Médias : contribution à MyTélévision et D5News (100 k+ utilisateurs).",
-            "Sites vitrines & e-commerce : corporate, boutiques et apps métier.",
-            "Production : APIs NestJS, PostgreSQL et déploiements en production."
+            "Multi-clients : 10+ plateformes vitrines, e-commerce et outils métiers.",
+            "CMS : WordPress, PrestaShop et intégrations.",
+            "Outils métiers : administration Odoo et optimisation des processus.",
+            "Production : Symfony, Laravel, MySQL et déploiements."
           ],
           "stack": [
+            "WordPress",
+            "PHP",
+            "Laravel",
+            "Symfony",
+            "Odoo",
             "Next.js",
             "React",
-            "Node.js",
-            "NestJS",
-            "PostgreSQL",
-            "AWS",
-            "Flutter"
+            "MySQL"
           ],
           "badge": "+ 2 ans",
           "badgeType": "duration"
@@ -167,11 +169,12 @@
           "stack": [
             "Next.js",
             "React",
-            "Node.js",
             "WordPress",
-            "PrestaShop",
             "PHP",
-            "Laravel"
+            "Laravel",
+            "Symfony",
+            "PrestaShop",
+            "MySQL"
           ],
           "badge": "+ 2 ans",
           "badgeType": "duration"
@@ -180,16 +183,16 @@
     },
     "en": {
       "meta": {
-        "pageTitle": "Styve Maba — Resume",
-        "targetRole": "Full-Stack Engineer & Technical Lead"
+        "pageTitle": "Styve Maba — IT & Web Resume",
+        "targetRole": "IT & Web Development Officer"
       },
       "identity": {
         "name": "Styve Maba",
         "photoAlt": "Styve Maba"
       },
       "profile": {
-        "title": "Full-Stack Engineer & Technical Lead",
-        "summary": "Full-stack software engineer with 5+ years of experience on web and mobile platforms in production—e-commerce, SaaS, fintech, and media. Currently technical lead on Ride and DTMoney; background in multi-client consulting and agency team leadership. From design through operations: APIs, mobile, AWS cloud, and incident resolution."
+        "title": "IT & Web Development Officer",
+        "summary": "IT and web development officer, 5+ years on websites, CMS, and production platforms—e-commerce, SaaS, and business tools. Agency and consulting: maintenance, updates, user support, and team guidance. HTML/CSS/JS, PHP, WordPress, Laravel, Symfony, Odoo, PostgreSQL/MySQL; cybersecurity monitoring."
       },
       "stats": [
         { "value": "+25", "label": "Projects" },
@@ -229,18 +232,18 @@
       "skills": [
         {
           "icon": "code",
-          "title": "Development",
+          "title": "Web development",
           "items": [
-            "React, Next.js, Flutter, React Native — production web & mobile UIs",
-            "Node.js, NestJS, PostgreSQL — REST/real-time APIs & transactions"
+            "HTML, CSS, JavaScript, PHP — website build and maintenance in production",
+            "WordPress, Laravel, Symfony, CMS — features, content, and integrations"
           ]
         },
         {
           "icon": "cloud",
-          "title": "Infrastructure & ecosystem",
+          "title": "Infrastructure & IT support",
           "items": [
-            "AWS, Docker, CI/CD — deploy, monitoring, incident resolution",
-            "WordPress, PrestaShop — e-commerce, CMS, third-party APIs"
+            "Odoo — administration and optimization of internal processes",
+            "User support, procedures, and documentation; PostgreSQL, MySQL, AWS, Docker"
           ]
         },
         {
@@ -257,11 +260,11 @@
       "education": [
         {
           "title": "Economics Studies — Level Bachelor II",
-          "place": "Marien Ngouabi University — 2017 - 2020"
+          "place": "Marien Ngouabi University — 2017 — 2020"
         },
         {
           "title": "High School Diploma — Science Track D",
-          "place": "Lycée Savorgnan de Brazza — 2016 - 2017"
+          "place": "Lycée Savorgnan de Brazza — 2016 — 2017"
         }
       ],
       "certifications": [
@@ -274,22 +277,22 @@
           "role": "FULL-STACK DEVELOPER & PROJECT LEAD",
           "company": "LRC GROUP",
           "period": "February 2025 - Present",
-          "summary": "Project lead for Ride and DTMoney. Mobile and backend in production for delivery and real-time transactions.",
+          "summary": "Maintenance and evolution of company web platforms and digital tools. Technical support and continuous improvement of production systems.",
           "missions": [
-            "Leadership: web/mobile/backend coordination on Ride and DTMoney.",
-            "Mobile: Flutter/React Native features for 500+ users.",
-            "Real time: Socket.IO flows; perceived latency down 25%.",
-            "Transactions: secured financial flows; 70% fewer critical incidents.",
-            "Operations: NestJS/Node.js APIs, P1/P2 maintenance in production."
+            "Web & tools: maintenance and evolution of internal platforms.",
+            "User support: assistance and incident resolution (P1/P2).",
+            "Performance & SEO: site monitoring and business support.",
+            "Databases: PostgreSQL, MySQL — data integrity, tracking, and updates.",
+            "Security: monitoring, updates, and patches on production environments."
           ],
           "stack": [
-            "React-Native",
             "Next.js",
-            "Flutter",
             "Node.js",
             "NestJS",
-            "Socket.IO",
-            "PostgreSQL"
+            "PostgreSQL",
+            "MySQL",
+            "React",
+            "AWS"
           ],
           "badge": "Current",
           "badgeType": "active"
@@ -297,25 +300,26 @@
         {
           "role": "FULL-STACK WEB & MOBILE CONSULTANT",
           "period": "October 2023 - February 2025",
-          "summary": "Full-stack consultant: web and mobile platforms for local and international clients.",
+          "summary": "Design, maintenance, and evolution of websites for local and international clients. Collaboration with client teams on content and business needs.",
           "clients": [
             { "name": "XKS Group", "url": "https://www.xksgroup.com" },
             { "name": "Webtinix", "url": "https://webtinix.com" }
           ],
           "missions": [
-            "Multi-client: 10+ web/mobile platforms for XKS Group and Webtinix.",
-            "Media: MyTélévision and D5News (100k+ users).",
-            "Showcase & e-commerce: corporate sites, stores, business apps.",
-            "Production: NestJS APIs, PostgreSQL, production deployments."
+            "Multi-client: 10+ showcase, e-commerce, and business tool platforms.",
+            "CMS: WordPress and integrations; liaison with communication teams.",
+            "Business tools: Odoo administration and internal process optimization.",
+            "Production: Symfony, Laravel, MySQL, and production deployments."
           ],
           "stack": [
+            "WordPress",
+            "PHP",
+            "Laravel",
+            "Symfony",
+            "Odoo",
             "Next.js",
             "React",
-            "Node.js",
-            "NestJS",
-            "PostgreSQL",
-            "AWS",
-            "Flutter"
+            "MySQL"
           ],
           "badge": "+ 2 yrs",
           "badgeType": "duration"
@@ -324,25 +328,26 @@
           "role": "FRONT-END DEVELOPER & DEPUTY TECHNICAL DIRECTOR",
           "company": "WEBTIX",
           "period": "September 2021 - October 2023",
-          "summary": "Web platforms in production for local and international clients. Team Lead, then Deputy Technical Director.",
+          "summary": "Web platforms in production for local and international clients. Progressive growth: Team Lead then Deputy Technical Director.",
           "evolutions": [
             "Team Lead Developer — February 2022 - February 2023",
             "Deputy Technical Director — March 2023 - October 2023"
           ],
           "missions": [
-            "E-commerce, SaaS, high-traffic sites: 7 projects in production.",
+            "E-commerce, SaaS, and high-traffic sites: 7 projects in production.",
             "Front-end: React/Next.js and CMS integration (WordPress, PrestaShop).",
             "Leadership: team of 5; Team Lead then Deputy TD.",
-            "Operations: deployment, monitoring, production maintenance."
+            "Operations: deployment, monitoring, and production maintenance."
           ],
           "stack": [
             "Next.js",
             "React",
-            "Node.js",
             "WordPress",
-            "PrestaShop",
             "PHP",
-            "Laravel"
+            "Laravel",
+            "Symfony",
+            "PrestaShop",
+            "MySQL"
           ],
           "badge": "+ 2 yrs",
           "badgeType": "duration"
