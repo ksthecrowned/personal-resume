@@ -86,7 +86,7 @@
       "education": [
         {
           "title": "Études en Sciences Économiques - Niveau Licence II",
-          "place": "Université Marien Ngouabi - 2017 — 2020"
+          "place": "Université Marien Ngouabi - 2017 - 2020"
         },
         {
           "title": "Baccalauréat Série D",
@@ -189,7 +189,7 @@
       },
       "profile": {
         "title": "Full-Stack Engineer & Technical Lead",
-        "summary": "Full-stack engineer, 5+ years on web and mobile platforms in production—e-commerce, SaaS, fintech, media. Technical lead on Ride and DTMoney; multi-client consulting and agency team leadership. Design through ops: APIs, mobile, AWS, incident resolution."
+        "summary": "Full-stack software engineer with 5+ years of experience on web and mobile platforms in production—e-commerce, SaaS, fintech, and media. Currently technical lead on Ride and DTMoney; background in multi-client consulting and agency team leadership. From design through operations: APIs, mobile, AWS cloud, and incident resolution."
       },
       "stats": [
         { "value": "+25", "label": "Projects" },
@@ -257,11 +257,11 @@
       "education": [
         {
           "title": "Economics Studies — Level Bachelor II",
-          "place": "Marien Ngouabi University — 2017 — 2020"
+          "place": "Marien Ngouabi University — 2017 - 2020"
         },
         {
           "title": "High School Diploma — Science Track D",
-          "place": "Lycée Savorgnan de Brazza — 2016 — 2017"
+          "place": "Lycée Savorgnan de Brazza — 2016 - 2017"
         }
       ],
       "certifications": [
@@ -276,7 +276,7 @@
           "period": "February 2025 - Present",
           "summary": "Project lead for Ride and DTMoney. Mobile and backend in production for delivery and real-time transactions.",
           "missions": [
-            "Leadership: product/mobile/backend coordination on Ride and DTMoney.",
+            "Leadership: web/mobile/backend coordination on Ride and DTMoney.",
             "Mobile: Flutter/React Native features for 500+ users.",
             "Real time: Socket.IO flows; perceived latency down 25%.",
             "Transactions: secured financial flows; 70% fewer critical incidents.",
@@ -297,16 +297,16 @@
         {
           "role": "FULL-STACK WEB & MOBILE CONSULTANT",
           "period": "October 2023 - February 2025",
-          "summary": "Full-stack consultant: delivered web and mobile platforms for local and international clients from scoping through production.",
+          "summary": "Full-stack consultant: web and mobile platforms for local and international clients.",
           "clients": [
             { "name": "XKS Group", "url": "https://www.xksgroup.com" },
             { "name": "Webtinix", "url": "https://webtinix.com" }
           ],
           "missions": [
             "Multi-client: 10+ web/mobile platforms for XKS Group and Webtinix.",
-            "Media: contributed to MyTélévision and D5News (100k+ users).",
-            "Showcase sites & e-commerce: corporate sites, stores, and business apps.",
-            "Production: NestJS APIs, PostgreSQL, and deployments in production."
+            "Media: MyTélévision and D5News (100k+ users).",
+            "Showcase & e-commerce: corporate sites, stores, business apps.",
+            "Production: NestJS APIs, PostgreSQL, production deployments."
           ],
           "stack": [
             "Next.js",
@@ -324,16 +324,16 @@
           "role": "FRONT-END DEVELOPER & DEPUTY TECHNICAL DIRECTOR",
           "company": "WEBTIX",
           "period": "September 2021 - October 2023",
-          "summary": "Web platforms in production for local and international clients. Progressive growth: Team Lead then deputy technical director.",
+          "summary": "Web platforms in production for local and international clients. Team Lead, then Deputy Technical Director.",
           "evolutions": [
             "Team Lead Developer — February 2022 - February 2023",
             "Deputy Technical Director — March 2023 - October 2023"
           ],
           "missions": [
-            "E-commerce, SaaS, and high-traffic sites: 4 projects shipped to production.",
-            "Frontend: React/Next.js and CMS integration (WordPress, PrestaShop).",
-            "Leadership: team of 5 people (Team Lead 2022–2023), then deputy technical director support.",
-            "Production: deployment, monitoring, and corrective maintenance."
+            "E-commerce, SaaS, high-traffic sites: 7 projects in production.",
+            "Front-end: React/Next.js and CMS integration (WordPress, PrestaShop).",
+            "Leadership: team of 5; Team Lead then Deputy TD.",
+            "Operations: deployment, monitoring, production maintenance."
           ],
           "stack": [
             "Next.js",
