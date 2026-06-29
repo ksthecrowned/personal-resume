@@ -87,6 +87,21 @@ Dans `data/variants/default.json` (ou la variante cible), ajoutez une ligne dans
 5. Échelle : **100 %**
 6. Cocher **Graphiques d'arrière-plan**
 
+## OCR — scan vers PDF recherchable
+
+Convertir une photo ou un scan en PDF avec texte recherchable (Ctrl+F).
+
+**Prérequis :** [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) dans le PATH.
+
+```bash
+bun run ocr:pdf -- "C:/chemin/vers/scan.jpg"
+bun run ocr:pdf -- scan.png --lang fra+eng --preprocess
+```
+
+Sortie par défaut : `exports/ocr/<nom>.pdf`
+
+Pour guider l'agent Cursor, invoquer le skill **`ocr-to-pdf`** (`.cursor/skills/ocr-to-pdf/`).
+
 ## Structure
 
 ```
