@@ -1,5 +1,6 @@
 node_modules/
 package-lock.json
+!jobforge/package-lock.json
 cv-mirfa-kouamala/
 exports/ocr/
 .env
