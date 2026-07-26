@@ -2,7 +2,16 @@
 
 Version éditable du CV, reproduite depuis le [design Figma](https://www.figma.com/design/a5r0BmmM6idmFAgBAae6dw/Kaiser-Styve---CV?node-id=4-4&m=dev).
 
-Le projet est statique (HTML/CSS/JS) et piloté par JSON:
+## JobForge (SaaS)
+
+Application candidature (Next.js) en Phase 1 — dossier [`jobforge/`](jobforge/). Voir `jobforge/README.md` et la spec `docs/superpowers/specs/2026-07-26-jobforge-saas-design.md`.
+
+```bash
+cd jobforge && npm install && npm run dev
+# → http://localhost:3001
+```
+
+Le projet CV reste statique (HTML/CSS/JS) et piloté par JSON:
 - contenu multilingue par variante (`data/variants/*.json`)
 - libellés d'interface (`data/i18n/*.json`)
 - rendu dynamique (`js/render.js`)
