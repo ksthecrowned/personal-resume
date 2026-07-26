@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JobForge (Phase 1)
 
-## Getting Started
+Atelier candidature Congo-first : coller une offre → score de match → brouillon de lettre (FR).
 
-First, run the development server:
+## Stack
+
+- Next.js 15 (App Router) — port `3001`
+- PostgreSQL + Prisma
+- Auth.js (credentials)
+- Cloudflare Workers AI (`AI_MODE=cloudflare`) ou mocks (`AI_MODE=mock`)
+
+## Setup
+
+1. Copier `.env.example` → `.env.local` (ou `.env`)
+2. Renseigner `DATABASE_URL` (AlwaysData PostgreSQL recommandé)
+3. Générer `AUTH_SECRET` (`openssl rand -base64 32`)
+4. Installer et migrer :
 
 ```bash
+cd jobforge
+npm install
+npx prisma generate
+npx prisma db push
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3001](http://localhost:3001).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Commande | Rôle |
+|----------|------|
+| `npm run dev` | Dev serveur :3001 |
+| `npm test` | Vitest |
+| `npm run db:push` | Appliquer le schéma Prisma |
+| `npm run db:studio` | Explorer la DB |
 
-## Learn More
+## Scope Phase 1
 
-To learn more about Next.js, take a look at the following resources:
+Inclus : inscription, profil, offre → match → lettre (mock/CF AI).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Hors scope (Phase 2+) : OAuth Gmail/Outlook envoi, R2, PDF templates, annuaire entreprises.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Spec / plan
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Spec : `docs/superpowers/specs/2026-07-26-jobforge-saas-design.md`
+- Plan : `docs/superpowers/plans/2026-07-26-jobforge-phase1-foundation.md`
