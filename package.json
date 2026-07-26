@@ -10,6 +10,12 @@
     "preview": "serve .",
     "export:pdf": "node scripts/export-pdfs.mjs",
     "export:pdf:single": "node scripts/generate-cv-pdf.mjs",
+    "export:pdf:lettre": "node scripts/generate-lettre-pdf.mjs",
+    "export:pdf:spontanees": "node scripts/generate-spontanees.mjs --pdf",
+    "generate:spontanees": "node scripts/generate-spontanees.mjs",
+    "send:spontanees": "node scripts/send-spontanees.mjs",
+    "verify:emails": "node scripts/verify-emails.mjs",
+    "export:pdf:lettres": "node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre Cofina\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre Conexo\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre Congo Market\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre IPAIM\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Fiche Modules IPAIM\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre Continental\" && node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre Groupe Yannick\"",
     "export:pdf:mirfa": "node scripts/generate-mirfa-cv-pdf.mjs",
     "export:pdf:mirfa-lettre": "node scripts/generate-mirfa-lettre-pdf.mjs",
     "ocr:pdf": "node scripts/ocr-to-pdf.mjs"
@@ -19,8 +25,13 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/nodemailer": "^8.0.1",
     "playwright-core": "^1.49.1",
     "serve": "^14.2.4",
     "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "nodemailer": "^9.0.3"
   }
 }

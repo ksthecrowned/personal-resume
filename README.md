@@ -80,7 +80,124 @@ Dans `data/variants/default.json` (ou la variante cible), ajoutez une ligne dans
 
 ## Export PDF (A4)
 
-1. Ouvrir le CV via `npx serve .` ou `bun run preview`
+### Export automatique (recommandé)
+
+L'export batch utilise Playwright et nécessite **Chrome** installé sur la machine.
+
+**Terminal 1** — serveur de preview (doit rester actif) :
+
+```bash
+bun run preview
+```
+
+**Terminal 2** — export de toutes les variantes et langues listées dans `data/variants/manifest.json` :
+
+```bash
+bun run export:pdf
+```
+
+Les PDF sont générés dans `exports/` :
+
+```
+exports/
+├── default/
+│   ├── fr/Styve Maba - CV.pdf
+│   └── en/Styve Maba - CV.pdf
+├── charge-it-dev-web/
+│   ├── fr/Styve Maba - CV.pdf
+│   └── en/Styve Maba - CV.pdf
+└── responsable-it/
+    ├── fr/Styve Maba - CV.pdf
+    └── en/Styve Maba - CV.pdf
+```
+
+Le serveur cible par défaut est `http://localhost:3000`. Pour un autre port :
+
+```bash
+CV_BASE_URL=http://localhost:8080 bun run export:pdf
+```
+
+#### Une seule variante / langue
+
+```bash
+CV_VARIANT=responsable-it CV_LANG=en bun run export:pdf:single
+```
+
+Variables disponibles :
+
+| Variable | Défaut | Description |
+|----------|--------|-------------|
+| `CV_VARIANT` | `default` | Slug de la variante (`data/variants/<slug>.json`) |
+| `CV_LANG` | `fr` | Code langue (`fr`, `en`, …) |
+| `CV_OUT` | `exports/<variant>/<lang>/Styve Maba - CV.pdf` | Chemin du fichier de sortie |
+| `CV_BASE_URL` | `http://localhost:3000` | URL du serveur de preview |
+
+Exemple :
+
+```bash
+CV_VARIANT=dev-web-ecommerce CV_LANG=fr bun run export:pdf:single
+# → exports/dev-web-ecommerce/fr/Styve Maba - CV.pdf
+```
+
+Chemin personnalisé :
+
+```bash
+CV_VARIANT=responsable-it CV_LANG=fr CV_OUT="exports/custom/Styve Maba - CV.pdf" bun run export:pdf:single
+```
+
+## Lettres de motivation
+
+Les lettres HTML suivent le même modèle que `cv-mirfa-kouamala/` (page A4, CSS inline, classe `.letter-page`).
+
+```
+lettres/
+├── assets/
+│   ├── cofina-logo.png
+│   ├── conexo-logo.png
+│   └── congo-market-logo.png
+├── Styve Maba - Lettre Cofina.html
+├── Styve Maba - Lettre Conexo.html
+└── Styve Maba - Lettre Congo Market.html
+```
+
+### Prévisualisation
+
+Ouvrir directement le fichier HTML dans le navigateur, ou via le serveur local :
+
+```bash
+bun run preview
+# http://localhost:3000/lettres/Styve%20Maba%20-%20Lettre%20Cofina.html
+```
+
+### Export PDF
+
+**Les deux lettres :**
+
+```bash
+bun run export:pdf:lettres
+```
+
+**Une seule lettre :**
+
+```bash
+bun run export:pdf:lettre -- "Styve Maba - Lettre Cofina"
+bun run export:pdf:lettre -- "Styve Maba - Lettre Conexo"
+bun run export:pdf:lettre -- "Styve Maba - Lettre Congo Market"
+```
+
+Les PDF sont générés à côté des HTML dans `lettres/`. Chemin de sortie personnalisé :
+
+```bash
+LETTER_BASE="Styve Maba - Lettre Cofina" LETTER_OUT="exports/lettres/cofina.pdf" bun run export:pdf:lettre
+```
+
+**Prérequis :** Chrome installé (Playwright, canal `chrome`).
+
+### Export manuel (navigateur)
+
+Utile pour vérifier le rendu avant un export batch.
+
+1. Ouvrir le CV via `bun run preview`, par ex. [http://localhost:3000/?variant=responsable-it&lang=fr](http://localhost:3000/?variant=responsable-it&lang=fr)
 2. **Ctrl+P** (ou Cmd+P sur Mac)
 3. Destination : **Enregistrer en PDF**
 4. Marges : **Aucune**
@@ -115,6 +232,11 @@ css/tokens.css              → variables design (couleurs Figma)
 css/layout.css              → mise en page
 css/print.css               → règles impression A4
 js/render.js                → injection (?variant= & ?lang=)
+exports/                    → PDF générés (export:pdf)
+lettres/                    → lettres de motivation HTML + PDF
+scripts/export-pdfs.mjs     → export batch Playwright
+scripts/generate-cv-pdf.mjs → export d'une variante
+scripts/generate-lettre-pdf.mjs → export lettre HTML → PDF
 ```
 
 ## Photo

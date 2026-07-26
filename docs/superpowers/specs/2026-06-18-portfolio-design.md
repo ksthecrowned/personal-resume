@@ -1,7 +1,7 @@
 # Portfolio Styve Maba — Design Spec
 
-**Date:** 2026-06-18  
-**Auteur:** Styve Maba (avec assistance IA)  
+**Date:** 2026-06-18
+**Auteur:** Styve Maba (avec assistance IA)
 **Statut:** En attente de revue utilisateur
 
 ## Objectif
@@ -10,19 +10,19 @@ Créer un portfolio web **moderne et mémorable** pour impressionner des **pairs
 
 ## Contraintes validées
 
-| Contrainte | Décision |
-|------------|----------|
-| Audience | Pairs dev & communauté tech (crédibilité, GitHub/LinkedIn) |
-| Repo | **Nouveau repo** indépendant du CV |
-| Stack | Next.js (App Router) |
-| Langues | Bilingue FR/EN avec switcher (`next-intl`, routes `/fr/...` et `/en/...`) |
-| Thème | Toggle dark/light (dark par défaut au premier chargement) |
-| Navigation | **Multi-pages** — pas de one-page scroll |
-| Blog | Complet — articles en **MDX local** versionnés dans le repo |
-| Projets | Pages détail case study par projet (`/projects/[slug]`) |
-| Contenu initial | Migré + enrichi depuis `personal-resume/data/variants/default.json` |
-| Témoignages | Structure prête, placeholders `[à compléter]` |
-| Déploiement | Vercel |
+| Contrainte      | Décision                                                                    |
+| --------------- | --------------------------------------------------------------------------- |
+| Audience        | Pairs dev & communauté tech (crédibilité, GitHub/LinkedIn)                  |
+| Repo            | **Nouveau repo** indépendant du CV                                          |
+| Stack           | Next.js (App Router)                                                        |
+| Langues         | Bilingue FR/EN avec switcher (`next-intl`, routes `/fr/...` et `/en/...`)   |
+| Thème           | Toggle dark/light (dark par défaut au premier chargement)                   |
+| Navigation      | **Multi-pages** — pas de one-page scroll                                    |
+| Blog            | Complet — articles en **MDX local** versionnés dans le repo                 |
+| Projets         | Pages détail case study par projet (`/projects/[slug]`)                     |
+| Contenu initial | Migré + enrichi depuis `personal-resume/data/variants/default.json`         |
+| Témoignages     | Structure prête, placeholders `[à compléter]`                               |
+| Déploiement     | Vercel                                                                      |
 | Pipeline design | brainstorming → design-lab (5 variantes) → frontend-design (implémentation) |
 
 ## Approche retenue
@@ -88,12 +88,12 @@ portfolio/
 
 ### Accueil (`/`)
 
-| Bloc | Contenu |
-|------|---------|
-| Hero | Nom, titre, accroche orientée pairs dev, stats (+25 projets, +5 ans), CTA vers `/projects`, liens GitHub/LinkedIn |
-| Projets phares | 3 cartes (Ride, DTMoney, MyTélévision/D5News) → lien vers fiche détail |
-| Derniers articles | 3 posts récents du blog → lien vers `/blog/[slug]` |
-| Témoignages | 1–2 citations (placeholders si besoin) |
+| Bloc              | Contenu                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Hero              | Nom, titre, accroche orientée pairs dev, stats (+25 projets, +5 ans), CTA vers `/projects`, liens GitHub/LinkedIn |
+| Projets phares    | 3 cartes (Ride, DTMoney, MyTélévision/D5News) → lien vers fiche détail                                            |
+| Derniers articles | 3 posts récents du blog → lien vers `/blog/[slug]`                                                                |
+| Témoignages       | 1–2 citations (placeholders si besoin)                                                                            |
 
 ### À propos (`/about`)
 
@@ -105,7 +105,7 @@ Timeline verticale des 3 postes :
 
 1. LRC GROUP — Ride & DTMoney (2025–présent)
 2. Consultant — XKS Group, Webtinix (2023–2025)
-3. WEBTIX — Team Lead / Adjoint DT (2021–2023)
+3. WEBTINIX — Team Lead / Adjoint DT (2021–2023)
 
 Chaque entrée : rôle, période, résumé, missions condensées, stack chips, badge statut.
 
@@ -115,12 +115,12 @@ Chaque entrée : rôle, période, résumé, missions condensées, stack chips, b
 
 **Fiches initiales** (MDX FR + EN) :
 
-| Slug | Projet | Métriques clés (CV) |
-|------|--------|---------------------|
-| `ride` | Ride — livraison | +500 users, coordination full-stack |
-| `dtmoney` | DTMoney — fintech | -70% incidents critiques, temps réel |
-| `mytelevision` | MyTélévision / D5News | 100k+ utilisateurs |
-| `ecommerce-clients` | Plateformes e-commerce clients | 10+ plateformes, multi-clients |
+| Slug                | Projet                         | Métriques clés (CV)                  |
+| ------------------- | ------------------------------ | ------------------------------------ |
+| `ride`              | Ride — livraison               | +500 users, coordination full-stack  |
+| `dtmoney`           | DTMoney — fintech              | -70% incidents critiques, temps réel |
+| `mytelevision`      | MyTélévision / D5News          | 100k+ utilisateurs                   |
+| `ecommerce-clients` | Plateformes e-commerce clients | 10+ plateformes, multi-clients       |
 
 Structure case study MDX :
 
@@ -185,22 +185,22 @@ Reprend et enrichit depuis `default.json` :
 
 ### Typographie
 
-| Rôle | Police | Usage |
-|------|--------|-------|
-| Display brutal | **Syne** ou **Clash Display** | Hero, titres section, chiffres stats |
-| Body | **DM Sans** ou **General Sans** | Texte courant, prose blog |
+| Rôle           | Police                          | Usage                                |
+| -------------- | ------------------------------- | ------------------------------------ |
+| Display brutal | **Syne** ou **Clash Display**   | Hero, titres section, chiffres stats |
+| Body           | **DM Sans** ou **General Sans** | Texte courant, prose blog            |
 
 **Inter interdit** — éviter l'esthétique générique AI.
 
 ### Palette (héritée du CV, enrichie)
 
-| Token | Valeur | Usage |
-|-------|--------|-------|
-| `--color-primary` | `#1e1950` | Texte brutal light, fond accents |
-| `--color-accent` | `#422fbd` | Mesh gradient, glow, liens |
-| `--color-orange` | `#ff893a` | Highlights brutalistes |
-| `--color-bg-dark` | `#0a0818` | Fond dark |
-| `--color-bg-light` | `#f5f4f0` | Fond light |
+| Token              | Valeur    | Usage                            |
+| ------------------ | --------- | -------------------------------- |
+| `--color-primary`  | `#1e1950` | Texte brutal light, fond accents |
+| `--color-accent`   | `#422fbd` | Mesh gradient, glow, liens       |
+| `--color-orange`   | `#ff893a` | Highlights brutalistes           |
+| `--color-bg-dark`  | `#0a0818` | Fond dark                        |
+| `--color-bg-light` | `#f5f4f0` | Fond light                       |
 
 ### Glass utilities
 
@@ -218,10 +218,10 @@ Reprend et enrichit depuis `default.json` :
 
 ### Toggle dark / light
 
-| Mode | Fond | Brutal | Glass |
-|------|------|--------|-------|
-| Dark (défaut) | Navy + mesh violet | Blanc pur | Panneaux semi-transparents clairs |
-| Light | Off-white + mesh doux | Navy `#1e1950` | Panneaux semi-transparents foncés |
+| Mode          | Fond                  | Brutal         | Glass                             |
+| ------------- | --------------------- | -------------- | --------------------------------- |
+| Dark (défaut) | Navy + mesh violet    | Blanc pur      | Panneaux semi-transparents clairs |
+| Light         | Off-white + mesh doux | Navy `#1e1950` | Panneaux semi-transparents foncés |
 
 Transition 400ms sur couleurs et blur.
 
@@ -236,26 +236,26 @@ Transition 400ms sur couleurs et blur.
 
 Composants ciblés : **Hero**, **ProjectCard**, **PostCard**.
 
-| Variant | Axe |
-|---------|-----|
-| A | Hiérarchie — hero brutal dominant, glass discret |
-| B | Layout — grille bento brutal vs cartes glass empilées |
-| C | Densité — sparse (beaucoup d'air) vs dense (info riche) |
-| D | Interaction — modal glass vs expand inline brutal |
-| E | Expressif — push max fusion glass + brutal |
+| Variant | Axe                                                     |
+| ------- | ------------------------------------------------------- |
+| A       | Hiérarchie — hero brutal dominant, glass discret        |
+| B       | Layout — grille bento brutal vs cartes glass empilées   |
+| C       | Densité — sparse (beaucoup d'air) vs dense (info riche) |
+| D       | Interaction — modal glass vs expand inline brutal       |
+| E       | Expressif — push max fusion glass + brutal              |
 
-Route temporaire : `app/[locale]/__design_lab/page.tsx`  
+Route temporaire : `app/[locale]/__design_lab/page.tsx`
 Cleanup obligatoire après validation (suppression `.claude-design/` et routes temp).
 
 ## SEO, perf, accessibilité
 
-| Sujet | Implémentation |
-|-------|----------------|
-| SEO | `generateMetadata` par page ; OG images par article/projet |
-| Static gen | `generateStaticParams` pour blog + projets |
-| Images | `next/image`, WebP |
-| A11y | Contraste WCAG AA, focus visible, sémantique HTML |
-| i18n | `next-intl`, hreflang, locale dans l'URL |
+| Sujet      | Implémentation                                             |
+| ---------- | ---------------------------------------------------------- |
+| SEO        | `generateMetadata` par page ; OG images par article/projet |
+| Static gen | `generateStaticParams` pour blog + projets                 |
+| Images     | `next/image`, WebP                                         |
+| A11y       | Contraste WCAG AA, focus visible, sémantique HTML          |
+| i18n       | `next-intl`, hreflang, locale dans l'URL                   |
 
 ## Hors scope v1
 

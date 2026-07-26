@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styve Maba — Fiche modules IPAIM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-primary: #0b1f4a;
+        --color-accent: #c9a227;
+        --page-w: 595.5pt;
+        --page-h: 842.25pt;
+        --pad: 48pt;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 10.5pt;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        background: #c8c8cc;
+        font-family: "Inter", sans-serif;
+        line-height: 1.5;
+        color: var(--color-primary);
+      }
+
+      .letter-page {
+        width: var(--page-w);
+        min-height: var(--page-h);
+        padding: var(--pad);
+        background: #fff;
+        box-shadow: 0 10px 40px rgba(11, 31, 74, 0.18);
+      }
+
+      h1 {
+        font-size: 16pt;
+        margin-bottom: 4pt;
+      }
+
+      .subtitle {
+        color: var(--color-accent);
+        font-weight: 600;
+        font-size: 10pt;
+        margin-bottom: 6pt;
+      }
+
+      .meta {
+        font-size: 9.5pt;
+        margin-bottom: 18pt;
+        padding-bottom: 12pt;
+        border-bottom: 2pt solid var(--color-accent);
+      }
+
+      h2 {
+        font-size: 11.5pt;
+        margin: 16pt 0 8pt;
+        color: var(--color-primary);
+      }
+
+      .module {
+        margin-bottom: 12pt;
+        padding: 10pt 12pt;
+        background: #f7f8fb;
+        border-left: 3pt solid var(--color-accent);
+      }
+
+      .module h3 {
+        font-size: 10.5pt;
+        margin-bottom: 4pt;
+      }
+
+      .module p {
+        font-size: 9.5pt;
+        text-align: justify;
+        margin-bottom: 4pt;
+      }
+
+      .module ul {
+        margin-left: 14pt;
+        font-size: 9.5pt;
+      }
+
+      .module li {
+        margin-bottom: 2pt;
+      }
+
+      .note {
+        margin-top: 18pt;
+        font-size: 9.5pt;
+        text-align: justify;
+      }
+
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+        }
+
+        .letter-page {
+          width: 210mm;
+          min-height: 297mm;
+          box-shadow: none;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="letter-page">
+      <h1>Fiche descriptive des modules</h1>
+      <p class="subtitle">Candidature formateur — Pôle Technologique</p>
+      <p class="meta">
+        <strong>Candidat :</strong> Styve Maba<br />
+        <strong>Destinataire :</strong> Directeur Général — IPAIM University<br />
+        <strong>Date :</strong> 25 juillet 2026
+      </p>
+
+      <p style="text-align: justify; margin-bottom: 8pt; font-size: 9.5pt">
+        Modules que je suis prêt à animer, sur la base de plus de cinq ans
+        d'expérience en développement web et mobile en production, d'encadrement
+        d'équipe et de livraison de projets e-commerce, fintech et médias.
+      </p>
+
+      <h2>Modules prioritaires</h2>
+
+      <div class="module">
+        <h3>1. Développement Web</h3>
+        <p>
+          Conception et réalisation d'applications web : HTML, CSS, JavaScript,
+          PHP, frameworks front (React / Next.js) et back (Node.js, Laravel).
+        </p>
+        <ul>
+          <li>Architecture client/serveur et APIs REST</li>
+          <li>Intégration d'interfaces et bonnes pratiques front-end</li>
+          <li>CMS : WordPress, PrestaShop (e-commerce)</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3>2. Développement Mobile</h3>
+        <p>
+          Applications mobiles cross-platform avec Flutter et React Native ;
+          publication, maintenance et intégration avec des APIs back-end.
+        </p>
+        <ul>
+          <li>UI mobile, navigation et consommation d'API</li>
+          <li>Cas concrets : apps de livraison et transactions</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3>3. Génie Logiciel</h3>
+        <p>
+          Cycle de vie logiciel, organisation de projet, qualité et mise en
+          production à partir de retours d'expérience terrain.
+        </p>
+        <ul>
+          <li>Analyse de besoins, découpage et livraison itérative</li>
+          <li>Code reviews, documentation, gestion des incidents</li>
+          <li>Collaboration produit / design / technique</li>
+        </ul>
+      </div>
+
+      <div class="module">
+        <h3>4. Bases de données</h3>
+        <p>
+          Modélisation et exploitation de bases relationnelles (MySQL,
+          PostgreSQL) dans des applications web réelles.
+        </p>
+        <ul>
+          <li>Modèle relationnel, requêtes SQL, intégrité des données</li>
+          <li>Lien ORM / API et bonnes pratiques de sécurité</li>
+        </ul>
+      </div>
+
+      <h2>Modules complémentaires (selon besoin)</h2>
+
+      <div class="module">
+        <h3>5. Informatique de gestion</h3>
+        <p>
+          Outils numériques métier, automatisation et applications de gestion ;
+          lien entre besoins business et solutions techniques.
+        </p>
+      </div>
+
+      <div class="module">
+        <h3>6. Introduction à la cybersécurité</h3>
+        <p>
+          Sensibilisation aux risques web, bonnes pratiques de sécurisation des
+          applications et veille (certification Ethical Hacking — Udemy).
+        </p>
+      </div>
+
+      <p class="note">
+        <strong>Approche pédagogique :</strong> cours magistraux courts,
+        ateliers pratiques, projets fil rouge inspirés de cas réels, et
+        évaluation par livrables. Disponible pour adapter le contenu aux
+        programmes L1 / L2 / L3 d'IPAIM University.
+      </p>
+    </main>
+  </body>
+</html>

@@ -13,6 +13,27 @@
       "targetRole": "Chargé IT & Développement Web",
       "createdAt": "2026-06-17",
       "previewUrl": "/?variant=charge-it-dev-web&lang=fr"
+    },
+    {
+      "id": "responsable-it",
+      "label": "Responsable IT — Cofina Congo",
+      "targetRole": "Responsable Informatique",
+      "createdAt": "2026-07-03",
+      "previewUrl": "/?variant=responsable-it&lang=fr"
+    },
+    {
+      "id": "dev-web-ecommerce",
+      "label": "Développeur Web — E-commerce & Marketplace",
+      "targetRole": "Développeur Web",
+      "createdAt": "2026-07-25",
+      "previewUrl": "/?variant=dev-web-ecommerce&lang=fr"
+    },
+    {
+      "id": "formateur-technologie",
+      "label": "Formateur Technologie — Enseignement supérieur",
+      "targetRole": "Formateur en Technologie",
+      "createdAt": "2026-07-25",
+      "previewUrl": "/?variant=formateur-technologie&lang=fr"
     }
   ]
 }

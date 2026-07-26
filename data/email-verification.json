@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-07-26T00:31:11.823Z",
+  "mode": "syntax+mx",
+  "disclaimer": "Sans --smtp, seuls la syntaxe et les enregistrements MX du domaine sont vérifiés (pas l’existence de la boîte).",
+  "summary": {
+    "domain_ok": 22,
+    "no_mx": 2
+  },
+  "results": [
+    {
+      "id": "mtn",
+      "name": "MTN Congo",
+      "email": "recrutement.mtncongo@mtn.com",
+      "domain": "mtn.com",
+      "priority": "haute",
+      "cv": "default",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mtn-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "airtel",
+      "name": "Airtel Congo",
+      "email": "recrutement@cg.airtel.com",
+      "domain": "cg.airtel.com",
+      "priority": "haute",
+      "cv": "default",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mxb-0074ce01.gslb.pphosted.com",
+        "mxa-0074ce01.gslb.pphosted.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "techpmp",
+      "name": "TechPMP",
+      "email": "mbola.mtalamou-carel@techpmpgroup.com",
+      "domain": "techpmpgroup.com",
+      "priority": "haute",
+      "cv": "default",
+      "syntaxOk": true,
+      "mxOk": false,
+      "mxHosts": [],
+      "mxError": "ENOTFOUND",
+      "smtp": null,
+      "verdict": "no_mx"
+    },
+    {
+      "id": "bralico",
+      "name": "Bralico",
+      "email": "bral.recrutement@castel-afrique.com",
+      "domain": "castel-afrique.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "castelafrique-com01e.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "brasco",
+      "name": "Brasco",
+      "email": "BRASCO.DRH@heineken.com",
+      "domain": "heineken.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "heineken-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "bgfi",
+      "name": "BGFI Bank Congo",
+      "email": "recrutement.bgfibankcongo@bgfi.com",
+      "domain": "bgfi.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "bgfi-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "ecobank",
+      "name": "Ecobank Congo",
+      "email": "recrutementcg@ecobank.com",
+      "domain": "ecobank.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "ecobank-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "lcb",
+      "name": "La Congolaise de Banque (LCB)",
+      "email": "lcbrecrute@lcb-bank.com",
+      "domain": "lcb-bank.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "smtpmail.eurafric-information.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "bci",
+      "name": "BCI Congo",
+      "email": "bci_recrutement@bcicongo.com",
+      "domain": "bcicongo.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "smtpb.bicec.com",
+        "smtpl.bicec.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "bsca",
+      "name": "BSCA Congo",
+      "email": "service@bscabank.com",
+      "domain": "bscabank.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mail.bscabank.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "congo-terminal",
+      "name": "Congo Terminal",
+      "email": "CG003-ct.carrieres@congo-terminal.com",
+      "domain": "congo-terminal.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "congoterminal-com01c.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "bollore",
+      "name": "Bolloré Congo",
+      "email": "gp_recrutement@bollore.com",
+      "domain": "bollore.com",
+      "priority": "haute",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mxb-0015df03.gslb.pphosted.com",
+        "mxa-0015df03.gslb.pphosted.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "totalenergies",
+      "name": "TotalEnergies Congo",
+      "email": "c-re-cgo-drh-recrutement@totalenergies.com",
+      "domain": "totalenergies.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "totalenergies-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "eni",
+      "name": "Eni Congo",
+      "email": "recrutement.enicongo@eni.com",
+      "domain": "eni.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "eni-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "perenco",
+      "name": "Perenco Congo",
+      "email": "cg.recrutement@cg.perenco.com",
+      "domain": "cg.perenco.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "eu-smtp-inbound-1.mimecast.com",
+        "eu-smtp-inbound-2.mimecast.com",
+        "mail.perenco.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "chevron",
+      "name": "Chevron Congo",
+      "email": "ctv-cgrh@chevron.com",
+      "domain": "chevron.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mx2.hc2860-13.iphmx.com",
+        "mx1.hc2860-13.iphmx.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "air-liquide",
+      "name": "Air Liquide Congo",
+      "email": "cg-rh-recrutement@airliquide.com",
+      "domain": "airliquide.com",
+      "priority": "moyenne",
+      "cv": "charge-it-dev-web",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "aspmx.l.google.com",
+        "alt2.aspmx.l.google.com",
+        "alt1.aspmx.l.google.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "siemens",
+      "name": "Siemens Congo",
+      "email": "recrutement.cg@siemens.com",
+      "domain": "siemens.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "siemens-com.h-v1.mx.microsoft"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "spie",
+      "name": "Spie Congo",
+      "email": "recrutement.congo@spie.com",
+      "domain": "spie.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mxa-0053e201.gslb.pphosted.com",
+        "mxb-0053e201.gslb.pphosted.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "fme",
+      "name": "FME Assurances",
+      "email": "recrutement@fmeassurances.com",
+      "domain": "fmeassurances.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": false,
+      "mxHosts": [],
+      "mxError": "ENOTFOUND",
+      "smtp": null,
+      "verdict": "no_mx"
+    },
+    {
+      "id": "sunu",
+      "name": "Sunu Assurances",
+      "email": "recrutement.bellevue@sunu-group.com",
+      "domain": "sunu-group.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "sunugroup-com01b.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "uba",
+      "name": "UBA Congo",
+      "email": "recrutement.ubacongo@ubagroup.com",
+      "domain": "ubagroup.com",
+      "priority": "moyenne",
+      "cv": "responsable-it",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "eu-smtp-inbound-2.mimecast.com",
+        "eu-smtp-inbound-1.mimecast.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "bureau-veritas",
+      "name": "Bureau Veritas",
+      "email": "gabon-congo@bureauveritas.com",
+      "domain": "bureauveritas.com",
+      "priority": "moyenne",
+      "cv": "charge-it-dev-web",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "mxa-0037c801.gslb.pphosted.com",
+        "mxb-0037c801.gslb.pphosted.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    },
+    {
+      "id": "dangote",
+      "name": "Dangote Congo",
+      "email": "recrutement.congo@dangote.com",
+      "domain": "dangote.com",
+      "priority": "moyenne",
+      "cv": "charge-it-dev-web",
+      "syntaxOk": true,
+      "mxOk": true,
+      "mxHosts": [
+        "dangote-com.mail.protection.outlook.com"
+      ],
+      "mxError": null,
+      "smtp": null,
+      "verdict": "domain_ok"
+    }
+  ]
+}

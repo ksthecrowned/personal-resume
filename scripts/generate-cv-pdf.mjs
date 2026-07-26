@@ -11,7 +11,7 @@ const variant = process.env.CV_VARIANT || 'default';
 const lang = process.env.CV_LANG || 'fr';
 const outPath =
   process.env.CV_OUT ||
-  path.join(root, 'Kaiser Styve - CV.pdf');
+  path.join(root, 'exports', variant, lang, 'Styve Maba - CV.pdf');
 
 const browser = await chromium.launch({ channel: 'chrome' });
 const page = await browser.newPage({

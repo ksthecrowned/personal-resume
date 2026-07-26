@@ -107,7 +107,6 @@
           "missions": [
             "Pilotage : coordination produit/mobile/back-end sur Ride et DTMoney.",
             "Mobile : fonctionnalités Flutter/React Native pour +500 utilisateurs.",
-            "Temps réel : flux Socket.IO ; latence perçue réduite de 25%.",
             "Transactions : flux financiers sécurisés ; -70 % d'incidents critiques.",
             "Exploitation : APIs NestJS/Node.js, maintenance P1/P2 en production."
           ],
@@ -151,7 +150,7 @@
         },
         {
           "role": "DÉVELOPPEUR FRONT-END & ADJOINT AU DIRECTEUR TECHNIQUE",
-          "company": "WEBTIX",
+          "company": "WEBTINIX",
           "period": "Septembre 2021 - Octobre 2023",
           "summary": "Plateformes web en production pour clients locaux et internationaux. Montée en responsabilités : Team Lead puis adjoint au Directeur Technique.",
           "evolutions": [
@@ -276,9 +275,8 @@
           "period": "February 2025 - Present",
           "summary": "Project lead for Ride and DTMoney. Mobile and backend in production for delivery and real-time transactions.",
           "missions": [
-            "Leadership: web/mobile/backend coordination on Ride and DTMoney.",
+            "Leadership: product/mobile/backend coordination on Ride and DTMoney.",
             "Mobile: Flutter/React Native features for 500+ users.",
-            "Real time: Socket.IO flows; perceived latency down 25%.",
             "Transactions: secured financial flows; 70% fewer critical incidents.",
             "Operations: NestJS/Node.js APIs, P1/P2 maintenance in production."
           ],
@@ -322,7 +320,7 @@
         },
         {
           "role": "FRONT-END DEVELOPER & DEPUTY TECHNICAL DIRECTOR",
-          "company": "WEBTIX",
+          "company": "WEBTINIX",
           "period": "September 2021 - October 2023",
           "summary": "Web platforms in production for local and international clients. Team Lead, then Deputy Technical Director.",
           "evolutions": [

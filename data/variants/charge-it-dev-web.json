@@ -19,7 +19,7 @@
       },
       "profile": {
         "title": "Chargé IT & Développement Web",
-        "summary": "Chargé IT et développement web, 5+ ans d'expérience sur sites web, CMS et plateformes en production; SaaS et outils métiers. Agence, consulting : maintenance, évolutions, support utilisateurs et accompagnement équipes. HTML/CSS/JS, PHP, WordPress, Laravel, Symfony, Odoo, PostgreSQL/MySQL ; veille cybersécurité."
+        "summary": "Chargé IT & Développeur Web avec plus de 5 ans d'expérience. Expert en sites web, CMS, SaaS et applications métiers en production. Expérience en agence et consulting : maintenance, évolutions et support utilisateurs. Ecosystème JavaScript/TypeScript, CMS, Odoo, PostgreSQL/MySQL et veille cybersécurité."
       },
       "stats": [
         { "value": "+25", "label": "Projets" },
@@ -109,8 +109,7 @@
             "Sites & outils web : maintenance et évolution des plateformes.",
             "Support technique : assistance utilisateurs et résolution d'incidents.",
             "Performance & SEO : suivi du site, optimisations et accompagnement.",
-            "Bases de données : PostgreSQL, MySQL — intégrité et suivi.",
-            "Sécurité : veille, mises à jour et correctifs en production."
+            "Bases de données : PostgreSQL, MySQL — intégrité et suivi."
           ],
           "stack": [
             "Next.js",
@@ -153,7 +152,7 @@
         },
         {
           "role": "DÉVELOPPEUR FRONT-END & ADJOINT AU DIRECTEUR TECHNIQUE",
-          "company": "WEBTIX",
+          "company": "WEBTINIX",
           "period": "Septembre 2021 - Octobre 2023",
           "summary": "Plateformes web en production pour clients locaux et internationaux. Montée en responsabilités : Team Lead puis adjoint au Directeur Technique.",
           "evolutions": [
@@ -192,7 +191,7 @@
       },
       "profile": {
         "title": "IT & Web Development Officer",
-        "summary": "IT and web development officer, 5+ years on websites, CMS, and production platforms—e-commerce, SaaS, and business tools. Agency and consulting: maintenance, updates, user support, and team guidance. HTML/CSS/JS, PHP, WordPress, Laravel, Symfony, Odoo, PostgreSQL/MySQL; cybersecurity monitoring."
+        "summary": "IT & Web Developer with 5+ years of experience. Expert in websites, CMS, SaaS, and business applications in production. Agency and consulting background: maintenance, updates, and user support. JavaScript/TypeScript ecosystem, CMS, Odoo, PostgreSQL/MySQL, and cybersecurity monitoring."
       },
       "stats": [
         { "value": "+25", "label": "Projects" },
@@ -279,11 +278,10 @@
           "period": "February 2025 - Present",
           "summary": "Maintenance and evolution of company web platforms and digital tools. Technical support and continuous improvement of production systems.",
           "missions": [
-            "Web & tools: maintenance and evolution of internal platforms.",
-            "User support: assistance and incident resolution (P1/P2).",
-            "Performance & SEO: site monitoring and business support.",
-            "Databases: PostgreSQL, MySQL — data integrity, tracking, and updates.",
-            "Security: monitoring, updates, and patches on production environments."
+            "Web & tools: maintenance and evolution of platforms.",
+            "Technical support: user assistance and incident resolution.",
+            "Performance & SEO: site monitoring, optimizations, and guidance.",
+            "Databases: PostgreSQL, MySQL — integrity and monitoring."
           ],
           "stack": [
             "Next.js",
@@ -300,16 +298,16 @@
         {
           "role": "FULL-STACK WEB & MOBILE CONSULTANT",
           "period": "October 2023 - February 2025",
-          "summary": "Design, maintenance, and evolution of websites for local and international clients. Collaboration with client teams on content and business needs.",
+          "summary": "Design, maintenance, and evolution of websites for local and international clients. Collaboration with client teams on content.",
           "clients": [
             { "name": "XKS Group", "url": "https://www.xksgroup.com" },
             { "name": "Webtinix", "url": "https://webtinix.com" }
           ],
           "missions": [
             "Multi-client: 10+ showcase, e-commerce, and business tool platforms.",
-            "CMS: WordPress and integrations; liaison with communication teams.",
-            "Business tools: Odoo administration and internal process optimization.",
-            "Production: Symfony, Laravel, MySQL, and production deployments."
+            "CMS: WordPress, PrestaShop, and integrations.",
+            "Business tools: Odoo administration and process optimization.",
+            "Production: Symfony, Laravel, MySQL, and deployments."
           ],
           "stack": [
             "WordPress",
@@ -326,9 +324,9 @@
         },
         {
           "role": "FRONT-END DEVELOPER & DEPUTY TECHNICAL DIRECTOR",
-          "company": "WEBTIX",
+          "company": "WEBTINIX",
           "period": "September 2021 - October 2023",
-          "summary": "Web platforms in production for local and international clients. Progressive growth: Team Lead then Deputy Technical Director.",
+          "summary": "Web platforms in production for local and international clients. Team Lead, then Deputy Technical Director.",
           "evolutions": [
             "Team Lead Developer — February 2022 - February 2023",
             "Deputy Technical Director — March 2023 - October 2023"

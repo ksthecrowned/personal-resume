@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styve Maba — Cover Letter Conexo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-primary: #1e1950;
+        --color-accent: #ff893a;
+        --page-w: 595.5pt;
+        --page-h: 842.25pt;
+        --pad: 52pt;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 10.5pt;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+        background: #c8c8cc;
+        font-family: "Inter", sans-serif;
+        line-height: 1.55;
+        color: var(--color-primary);
+      }
+
+      .letter-page {
+        width: var(--page-w);
+        min-height: var(--page-h);
+        padding: var(--pad);
+        background: #fff;
+        box-shadow: 0 10px 40px rgba(30, 25, 80, 0.18);
+      }
+
+      .letter-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24pt;
+        margin-bottom: 28pt;
+        padding-bottom: 14pt;
+        border-bottom: 2pt solid var(--color-accent);
+      }
+
+      .letter-sender__name {
+        font-size: 14pt;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .letter-sender__detail,
+      .letter-recipient {
+        margin-top: 4pt;
+        font-size: 10pt;
+      }
+
+      .letter-recipient {
+        text-align: right;
+        max-width: 240pt;
+      }
+
+      .letter-recipient__logo {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 10pt;
+        max-height: 36pt;
+        width: auto;
+      }
+
+      .letter-recipient strong {
+        display: block;
+        font-size: 11pt;
+        margin-bottom: 4pt;
+      }
+
+      .letter-object {
+        margin: 22pt 0 18pt;
+        font-weight: 700;
+      }
+
+      .letter-body p {
+        margin-bottom: 12pt;
+        text-align: justify;
+      }
+
+      .letter-sign {
+        margin-top: 22pt;
+      }
+
+      .letter-sign__name {
+        margin-top: 28pt;
+        font-weight: 700;
+      }
+
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+        }
+
+        .letter-page {
+          width: 210mm;
+          min-height: 297mm;
+          box-shadow: none;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="letter-page">
+      <header class="letter-header">
+        <div class="letter-sender">
+          <p class="letter-sender__name">Styve Maba</p>
+          <p class="letter-sender__detail">Pointe-Noire, Republic of the Congo</p>
+          <p class="letter-sender__detail">(+242) 06 515 23 74</p>
+          <p class="letter-sender__detail">kaiserstyve2@gmail.com</p>
+          <p class="letter-sender__detail">github.com/ksthecrowned</p>
+        </div>
+        <div class="letter-recipient">
+          <img
+            class="letter-recipient__logo"
+            src="assets/conexo-logo.png"
+            alt="Conexo"
+          />
+          <strong>Conexo</strong>
+          RH@CONEXO.CA<br />
+          Quebec, Canada
+        </div>
+      </header>
+
+      <p class="letter-object">
+        Subject: Application — Fullstack JavaScript Developer (Technical Support
+        &amp; QA)
+      </p>
+
+      <div class="letter-body">
+        <p>Dear Hiring Team,</p>
+
+        <p>
+          I am writing to apply for the Fullstack JavaScript Developer
+          (Technical Support &amp; QA) position at Conexo. The combination of
+          software development, troubleshooting, quality assurance, and
+          customer support closely matches the responsibilities I have taken on
+          throughout my career.
+        </p>
+
+        <p>
+          I am a Full-Stack JavaScript Engineer with over five years of
+          experience building, maintaining, and supporting business-critical
+          platforms for fintech, media, and SaaS organizations. At LRC Group, I
+          currently lead technical delivery for Ride and DTMoney, developing
+          NestJS/Node.js backends, React/Next.js applications, and real-time
+          features while managing P1/P2 incidents, investigating production
+          issues, and ensuring platform reliability.
+        </p>
+
+        <p>
+          Previously, I worked as a consultant for XKS Group and Webtinix,
+          delivering more than ten web and mobile applications, including media
+          platforms serving over 100,000 users. Earlier in my career, I
+          progressed from Team Lead to Deputy Technical Director at Webtinix,
+          where I supervised a team of five developers, coordinated project
+          delivery, supported clients, and oversaw deployments and
+          maintenance.
+        </p>
+
+        <p>
+          My technical background includes Node.js, React.js, JavaScript,
+          MySQL, PostgreSQL, Linux, AWS, Docker, and CI/CD pipelines. Beyond
+          development, I enjoy diagnosing complex issues, working directly with
+          users, documenting solutions, and continuously improving software
+          quality and stability.
+        </p>
+
+        <p>
+          I am comfortable working remotely, collaborating across time zones,
+          and communicating fluently in both English and French. I would be
+          excited to contribute my technical and problem-solving skills to
+          Conexo's global platform and support your customers with reliable,
+          high-quality solutions.
+        </p>
+
+        <p>
+          I would welcome the opportunity to discuss how my experience can
+          contribute to your team.
+        </p>
+
+        <p>Best regards,</p>
+      </div>
+
+      <footer class="letter-sign">
+        <p>July 3, 2026</p>
+        <p class="letter-sign__name">Styve Maba</p>
+      </footer>
+    </main>
+  </body>
+</html>
