@@ -553,3 +553,39 @@ a.contact-item:hover {
   padding: 0.5mm 1mm;
   border-radius: 2px;
 }
+
+/* Dense / ATS layout flags (per-variant via meta.layout) */
+.cv-page.cv--hide-photo .identity__photo-wrap {
+  display: none;
+}
+
+.cv-page.cv--hide-stats .stats-row {
+  display: none;
+}
+
+.cv-page.cv--hide-hobbies .cv-section:has(#hobbies-container),
+.cv-page.cv--hide-hobbies #hobbies-section {
+  display: none;
+}
+
+.cv-page.cv--dense {
+  /* slight density — keep selectable text */
+  font-size: 9.5pt;
+}
+
+.cv-page.cv--dense .skill-block {
+  margin-bottom: 2mm;
+}
+
+.cv-page.cv--dense .skill-block__list {
+  gap: 0;
+}
+
+.cv-page.cv--dense .experience-card {
+  margin-bottom: 3mm;
+}
+
+.cv-page.cv--dense .profile-text {
+  font-size: 8.5pt;
+  line-height: 1.35;
+}

@@ -1,3 +1,5 @@
+import { layoutCssClasses } from "./layout-flags.mjs";
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -116,6 +118,19 @@ function applyIdentity(identity, profile) {
 
 function applyMeta(meta) {
   if (meta?.pageTitle) document.title = meta.pageTitle;
+}
+
+function applyLayout(layout) {
+  const page = document.getElementById("cv-page");
+  if (!page) return;
+  const layoutClasses = [
+    "cv--dense",
+    "cv--hide-photo",
+    "cv--hide-hobbies",
+    "cv--hide-stats",
+  ];
+  for (const cls of layoutClasses) page.classList.remove(cls);
+  for (const cls of layoutCssClasses(layout)) page.classList.add(cls);
 }
 
 function renderStats(stats) {
@@ -295,6 +310,7 @@ async function loadCv() {
 
   try {
     const variantData = await loadVariantData(slug);
+    applyLayout(variantData.meta?.layout);
     const locale = getLocale(variantData);
     const content = resolveLocaleContent(variantData, locale);
     const i18n = await loadI18n(locale);

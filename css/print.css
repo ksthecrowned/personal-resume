@@ -20,6 +20,19 @@
     print-color-adjust: exact;
   }
 
+  .cv-page.cv--dense {
+    height: auto;
+    max-height: none;
+    min-height: 297mm;
+    overflow: visible;
+  }
+
+  .cv-page.cv--dense.cv-page--clip {
+    /* preview clip must not hide page 2 content when printing */
+    max-height: none;
+    overflow: visible;
+  }
+
   .cv-card {
     box-shadow: none;
     -webkit-print-color-adjust: exact;
