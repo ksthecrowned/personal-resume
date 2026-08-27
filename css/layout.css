@@ -568,9 +568,15 @@ a.contact-item:hover {
   display: none;
 }
 
-.cv-page.cv--dense {
+.cv-page.cv--dense,
+.cv-page.cv--dense.cv-page--clip {
   /* slight density — keep selectable text */
   font-size: 9.5pt;
+  /* clip toggle stays on for A4 preview chrome; dense content must still be fully visible on screen */
+  height: auto;
+  max-height: none;
+  min-height: var(--page-height);
+  overflow: visible;
 }
 
 .cv-page.cv--dense .skill-block {

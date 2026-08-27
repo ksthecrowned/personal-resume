@@ -53,6 +53,17 @@
     break-inside: avoid;
   }
 
+  .cv-page.cv--dense .cv-section:has(#education-container),
+  .cv-page.cv--dense #education-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cv-page.cv--dense #education-section .section-label {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
   .stat-badge,
   .contact-item__icon,
   .hobby-icon,
