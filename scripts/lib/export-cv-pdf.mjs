@@ -16,6 +16,16 @@ const EXPORT_STYLES = `
   }
 `;
 
+const DENSE_UNCLIP_STYLES = `
+  #cv-page.cv--dense,
+  #cv-page.cv--dense.cv-page--clip {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 297mm !important;
+    overflow: visible !important;
+  }
+`;
+
 export async function exportCvPdf(page, { baseUrl, variant, lang, outPath }) {
   const url = `${baseUrl.replace(/\/$/, '')}/?variant=${encodeURIComponent(variant)}&lang=${encodeURIComponent(lang)}`;
 
@@ -25,13 +35,32 @@ export async function exportCvPdf(page, { baseUrl, variant, lang, outPath }) {
 
   await page.addStyleTag({ content: EXPORT_STYLES });
 
+  const isDense = await page.locator('#cv-page.cv--dense').count();
+
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+
+  if (isDense) {
+    await page.evaluate(() => {
+      const el = document.getElementById('cv-page');
+      if (el) el.classList.remove('cv-page--clip');
+    });
+    await page.addStyleTag({ content: DENSE_UNCLIP_STYLES });
+    await page.emulateMedia({ media: 'print' });
+    await page.pdf({
+      path: outPath,
+      format: 'A4',
+      printBackground: true,
+      margin: { top: '0', right: '0', bottom: '0', left: '0' },
+      preferCSSPageSize: true,
+    });
+    return outPath;
+  }
+
   const cv = page.locator('#cv-page');
   const box = await cv.boundingBox();
   if (!box) {
     throw new Error(`Impossible de localiser #cv-page (${variant}/${lang}).`);
   }
-
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
 
   await page.emulateMedia({ media: 'screen' });
   await page.pdf({
