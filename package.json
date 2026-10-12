@@ -10,28 +10,14 @@
     "preview": "serve .",
     "export:pdf": "node scripts/export-pdfs.mjs",
     "export:pdf:single": "node scripts/generate-cv-pdf.mjs",
-    "export:pdf:lettre": "node scripts/generate-lettre-pdf.mjs",
-    "export:pdf:spontanees": "node scripts/generate-spontanees.mjs --pdf",
-    "generate:spontanees": "node scripts/generate-spontanees.mjs",
-    "send:spontanees": "node scripts/send-spontanees.mjs",
-    "verify:emails": "node scripts/verify-emails.mjs",
-    "export:pdf:lettres": "node scripts/generate-lettre-pdf.mjs \"Styve Maba - Lettre GMU\"",
-    "export:pdf:mirfa": "node scripts/generate-mirfa-cv-pdf.mjs",
-    "export:pdf:mirfa-lettre": "node scripts/generate-mirfa-lettre-pdf.mjs",
-    "ocr:pdf": "node scripts/ocr-to-pdf.mjs"
+    "export:pdf:lettre": "node scripts/generate-lettre-pdf.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@types/nodemailer": "^8.0.1",
     "playwright-core": "^1.49.1",
-    "serve": "^14.2.4",
-    "sharp": "^0.33.5"
-  },
-  "dependencies": {
-    "dotenv": "^17.4.2",
-    "nodemailer": "^9.0.3"
+    "serve": "^14.2.4"
   }
 }
