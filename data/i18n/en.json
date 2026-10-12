@@ -2,8 +2,8 @@
   "sections": {
     "profile": "Personal information & contacts",
     "skills": "Technical skills",
-    "hobbies": "Hobbies",
     "experience": "Experience",
+    "personalProjects": "Personal projects",
     "education": "Education",
     "formations": "Training"
   },

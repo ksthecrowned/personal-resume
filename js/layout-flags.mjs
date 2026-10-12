@@ -7,8 +7,9 @@ export function normalizeLayout(layout) {
   return {
     dense: asBool(src.dense),
     hidePhoto: asBool(src.hidePhoto),
-    hideHobbies: asBool(src.hideHobbies),
-    hideStats: asBool(src.hideStats),
+    formationsUnderSkills: asBool(src.formationsUnderSkills),
+    alignEducationWithFormations: asBool(src.alignEducationWithFormations),
+    standardType: asBool(src.standardType),
   };
 }
 
@@ -17,7 +18,9 @@ export function layoutCssClasses(layout) {
   const classes = [];
   if (flags.dense) classes.push("cv--dense");
   if (flags.hidePhoto) classes.push("cv--hide-photo");
-  if (flags.hideHobbies) classes.push("cv--hide-hobbies");
-  if (flags.hideStats) classes.push("cv--hide-stats");
+  if (flags.alignEducationWithFormations) {
+    classes.push("cv--align-education-formations");
+  }
+  if (flags.standardType) classes.push("cv--standard-type");
   return classes;
 }

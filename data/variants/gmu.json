@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "id": "gmu",
+    "label": "Admission GMU — Génie logiciel, Développement Full-Stack",
+    "defaultLocale": "fr",
+    "availableLocales": [
+      "fr",
+      "en"
+    ],
+    "createdAt": "2026-10-10",
+    "notes": "Candidature en troisième année, Institut Supérieur Polytechnique, Giovani & Mamie University. Quatre semestres validés, pas de diplôme de licence.",
+    "layout": {
+      "dense": false,
+      "standardType": true,
+      "hidePhoto": false,
+      "formationsUnderSkills": true,
+      "alignEducationWithFormations": false
+    }
+  },
+  "locales": {
+    "fr": {
+      "meta": {
+        "pageTitle": "Styve Maba — CV GMU, Génie logiciel",
+        "targetRole": "Développeur Full-Stack"
+      },
+      "sections": {
+        "formations": "Formations complémentaires"
+      },
+      "identity": {
+        "name": "Styve Maba",
+        "photoAlt": "Styve Maba"
+      },
+      "profile": {
+        "title": "Développeur Full-Stack",
+        "summary": "Développeur informatique passionné, j’aime concevoir des solutions utiles, résoudre des problèmes concrets et transformer des idées en applications fonctionnelles. Après plusieurs années d’expérience en développement web et mobile, je souhaite approfondir mes connaissances et consolider mes acquis par une formation spécialisée en génie logiciel."
+      },
+      "contacts": [
+        {
+          "type": "location",
+          "text": "Pointe-Noire, République du Congo",
+          "icon": "contact-location.svg"
+        },
+        {
+          "type": "phone",
+          "text": "06 515 23 74 · 05 598 97 07",
+          "icon": "contact-phone.svg"
+        },
+        {
+          "type": "email",
+          "href": "mailto:kaiserstyve2@gmail.com",
+          "text": "kaiserstyve2@gmail.com",
+          "icon": "contact-email.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.linkedin.com/in/kaiser-styve",
+          "text": "linkedin.com/in/kaiser-styve",
+          "icon": "contact-linkedin.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.github.com/ksthecrowned",
+          "text": "github.com/ksthecrowned",
+          "icon": "contact-github.svg"
+        }
+      ],
+      "skills": [
+        {
+          "icon": "monitor",
+          "title": "Web et mobile",
+          "items": [
+            "JavaScript, TypeScript, React, Next.js",
+            "React Native, Expo, Flutter"
+          ]
+        },
+        {
+          "icon": "code",
+          "title": "Backend et infrastructure",
+          "items": [
+            "Node.js, NestJS, Prisma, API REST, Socket.IO, SSE, PostgreSQL, MySQL",
+            "Google Cloud, Cloudflare, Docker, CI/CD, Git"
+          ]
+        },
+        {
+          "icon": "languages",
+          "title": "Langues",
+          "items": [
+            "Français",
+            "Anglais conversationnel"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "title": "Faculté des Sciences Économiques — quatre semestres validés",
+          "period": "2017–2020",
+          "place": "Université Marien Ngouabi"
+        },
+        {
+          "title": "Baccalauréat série D",
+          "period": "2016–2017",
+          "place": "Lycée Savorgnan de Brazza"
+        }
+      ],
+      "certifications": [
+        {
+          "title": "Complete Web Developer",
+          "period": "2020",
+          "place": "Zero To Mastery"
+        },
+        {
+          "title": "Advanced CSS & Sass",
+          "period": "2020",
+          "place": "Udemy"
+        },
+        {
+          "title": "React Native - The Practical Guide",
+          "period": "2020",
+          "place": "Udemy"
+        }
+      ],
+      "personalProjects": [
+        {
+          "name": "AuraSpot",
+          "tagline": "Plateforme pour créateurs",
+          "url": "https://auraspot-one.vercel.app/explore",
+          "description": "Centralisation de la présence en ligne et collecte de dons."
+        },
+        {
+          "name": "TimeGate",
+          "tagline": "Gestion des présences",
+          "url": "https://timegate-one.vercel.app/",
+          "description": "Gestion des présences par reconnaissance faciale et NFC."
+        },
+        {
+          "name": "Paradis Immo",
+          "tagline": "Gestion immobilière",
+          "url": "https://paradis-immo.vercel.app/",
+          "description": "Plateforme complète de gestion immobilière."
+        }
+      ],
+      "experiences": [
+        {
+          "role": "DÉVELOPPEUR FULL-STACK LEAD",
+          "company": "LRC GROUP",
+          "period": "Février 2025 — Aujourd’hui",
+          "missions": [
+            "Suivi technique des projets : coordination et suivi des évolutions des solutions Ride et DTMoney.",
+            "Développement full-stack : conception et évolution de fonctionnalités web, mobiles et backend.",
+            "Gestion de la production : conception et maintenance d’API, gestion des données et résolution d’incidents."
+          ],
+          "badge": "En cours",
+          "badgeType": "active"
+        },
+        {
+          "role": "CONSULTANT DÉVELOPPEUR FULL-STACK WEB & MOBILE",
+          "period": "Octobre 2023 — Février 2025",
+          "summary": "Missions pour XKS Group et Webtinix : conception et mise en production de plateformes web et mobiles.",
+          "clients": [
+            {
+              "name": "XKS Group (xksgroup.com)",
+              "url": "https://www.xksgroup.com"
+            },
+            {
+              "name": "Webtinix (webtinix.com)",
+              "url": "https://webtinix.com"
+            }
+          ],
+          "missions": [
+            "Conception : plateformes web et mobiles, médias, vitrines, e-commerce et applications métier.",
+            "Intégration : API, services tiers et mise en production, en NestJS, Prisma et PostgreSQL."
+          ],
+          "badge": "+ 1 an",
+          "badgeType": "duration"
+        },
+        {
+          "role": "DÉVELOPPEUR FRONT-END",
+          "company": "WEBTINIX",
+          "period": "Septembre 2021 — Octobre 2023",
+          "summary": "Développement d’interfaces et de plateformes, puis progression vers Team Lead et adjoint au Directeur technique.",
+          "evolutions": [
+            "Team Lead Developer — février 2022 à février 2023",
+            "Adjoint au Directeur Technique — mars 2023 à octobre 2023"
+          ],
+          "missions": [
+            "Interfaces : développement web pour des plateformes e-commerce et SaaS, en React, Next.js et intégration CMS.",
+            "Exploitation : maintenance et suivi de projets en production."
+          ],
+          "badge": "+ 2 ans",
+          "badgeType": "duration"
+        }
+      ]
+    },
+    "en": {
+      "meta": {
+        "pageTitle": "Styve Maba — CV GMU, Software Engineering",
+        "targetRole": "Full-Stack Developer"
+      },
+      "sections": {
+        "formations": "Additional training"
+      },
+      "identity": {
+        "name": "Styve Maba",
+        "photoAlt": "Styve Maba"
+      },
+      "profile": {
+        "title": "Full-Stack Developer",
+        "summary": "A passionate software developer, I enjoy designing useful solutions, solving concrete problems, and turning ideas into working applications. After several years of experience in web and mobile development, I wish to deepen my knowledge and consolidate my skills through specialized training in software engineering."
+      },
+      "contacts": [
+        {
+          "type": "location",
+          "text": "Pointe-Noire, Republic of the Congo",
+          "icon": "contact-location.svg"
+        },
+        {
+          "type": "phone",
+          "text": "06 515 23 74 · 05 598 97 07",
+          "icon": "contact-phone.svg"
+        },
+        {
+          "type": "email",
+          "href": "mailto:kaiserstyve2@gmail.com",
+          "text": "kaiserstyve2@gmail.com",
+          "icon": "contact-email.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.linkedin.com/in/kaiser-styve",
+          "text": "linkedin.com/in/kaiser-styve",
+          "icon": "contact-linkedin.svg"
+        },
+        {
+          "type": "link",
+          "href": "https://www.github.com/ksthecrowned",
+          "text": "github.com/ksthecrowned",
+          "icon": "contact-github.svg"
+        }
+      ],
+      "skills": [
+        {
+          "icon": "monitor",
+          "title": "Web and mobile",
+          "items": [
+            "JavaScript, TypeScript, React, Next.js",
+            "React Native, Expo, Flutter"
+          ]
+        },
+        {
+          "icon": "code",
+          "title": "Backend and infrastructure",
+          "items": [
+            "Node.js, NestJS, Prisma, API REST, Socket.IO, SSE, PostgreSQL, MySQL",
+            "Google Cloud, Cloudflare, Docker, CI/CD, Git"
+          ]
+        },
+        {
+          "icon": "languages",
+          "title": "Languages",
+          "items": [
+            "French",
+            "Conversational English"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "title": "Faculty of Economics — four validated semesters",
+          "period": "2017–2020",
+          "place": "Marien Ngouabi University"
+        },
+        {
+          "title": "Baccalauréat, series D",
+          "period": "2016–2017",
+          "place": "Lycée Savorgnan de Brazza"
+        }
+      ],
+      "certifications": [
+        {
+          "title": "Complete Web Developer",
+          "period": "2020",
+          "place": "Zero To Mastery"
+        },
+        {
+          "title": "Advanced CSS & Sass",
+          "period": "2020",
+          "place": "Udemy"
+        },
+        {
+          "title": "React Native - The Practical Guide",
+          "period": "2020",
+          "place": "Udemy"
+        }
+      ],
+      "personalProjects": [
+        {
+          "name": "AuraSpot",
+          "tagline": "Platform for creators",
+          "url": "https://auraspot-one.vercel.app/explore",
+          "description": "Centralizing an online presence and collecting donations."
+        },
+        {
+          "name": "TimeGate",
+          "tagline": "Attendance management",
+          "url": "https://timegate-one.vercel.app/",
+          "description": "Attendance tracking with facial recognition and NFC."
+        },
+        {
+          "name": "Paradis Immo",
+          "tagline": "Property management",
+          "url": "https://paradis-immo.vercel.app/",
+          "description": "Complete property management platform."
+        }
+      ],
+      "experiences": [
+        {
+          "role": "FULL-STACK LEAD DEVELOPER",
+          "company": "LRC GROUP",
+          "period": "February 2025 — Present",
+          "missions": [
+            "Technical project oversight: coordinating and tracking changes to the Ride and DTMoney solutions.",
+            "Full-stack development: designing and evolving web, mobile, and backend features.",
+            "Production management: designing and maintaining APIs, managing data, and resolving incidents."
+          ],
+          "badge": "Current",
+          "badgeType": "active"
+        },
+        {
+          "role": "FULL-STACK WEB & MOBILE CONSULTANT",
+          "period": "October 2023 — February 2025",
+          "summary": "Assignments for XKS Group and Webtinix: design and production release of web and mobile platforms.",
+          "clients": [
+            {
+              "name": "XKS Group (xksgroup.com)",
+              "url": "https://www.xksgroup.com"
+            },
+            {
+              "name": "Webtinix (webtinix.com)",
+              "url": "https://webtinix.com"
+            }
+          ],
+          "missions": [
+            "Design: web and mobile platforms, media, showcase sites, e-commerce, and business applications.",
+            "Integration: APIs, third-party services, and production release, with NestJS, Prisma, and PostgreSQL."
+          ],
+          "badge": "+ 1 yr",
+          "badgeType": "duration"
+        },
+        {
+          "role": "FRONT-END DEVELOPER",
+          "company": "WEBTINIX",
+          "period": "September 2021 — October 2023",
+          "summary": "Interface and platform development, then progression to Team Lead and Deputy Technical Director.",
+          "evolutions": [
+            "Team Lead Developer — February 2022 to February 2023",
+            "Deputy Technical Director — March 2023 to October 2023"
+          ],
+          "missions": [
+            "Interfaces: web development for e-commerce and SaaS platforms, in React, Next.js, and CMS integration.",
+            "Operations: maintenance and monitoring of projects in production."
+          ],
+          "badge": "+ 2 yrs",
+          "badgeType": "duration"
+        }
+      ]
+    }
+  }
+}

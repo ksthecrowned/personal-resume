@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styve Maba — Lettre GMU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --color-primary: #0b1f4d;
+        --color-accent: #c9a227;
+        --page-w: 595.5pt;
+        --page-h: 842.25pt;
+        --pad: 52pt;
+      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html { font-size: 10.5pt; }
+      body {
+        min-height: 100vh; display: flex; justify-content: center; padding: 16px;
+        background: #c8c8cc; font-family: "Inter", sans-serif; line-height: 1.55;
+        color: var(--color-primary);
+      }
+      .letter-page {
+        width: var(--page-w); min-height: var(--page-h); padding: var(--pad);
+        background: #fff; box-shadow: 0 10px 40px rgba(11, 31, 77, 0.18);
+      }
+      .letter-header {
+        display: flex; justify-content: space-between; align-items: flex-start; gap: 24pt;
+        margin-bottom: 28pt; padding-bottom: 14pt;
+        border-bottom: 2pt solid var(--color-accent);
+      }
+      .letter-sender__name { font-size: 14pt; font-weight: 700; color: var(--color-primary); }
+      .letter-sender__detail, .letter-recipient { margin-top: 4pt; font-size: 10pt; }
+      .letter-recipient { text-align: right; max-width: 250pt; }
+      .letter-recipient__logo {
+        display: block; margin-left: auto; margin-bottom: 10pt;
+        height: 56pt; width: auto; object-fit: contain;
+      }
+      .letter-recipient strong { display: block; font-size: 11pt; margin-bottom: 4pt; }
+      .letter-object { margin: 22pt 0 18pt; font-weight: 700; }
+      .letter-body p { margin-bottom: 12pt; text-align: justify; orphans: 3; widows: 3; }
+      .letter-sign { margin-top: 22pt; break-inside: avoid; page-break-inside: avoid; }
+      .letter-sign__name { margin-top: 28pt; font-weight: 700; }
+      @media print {
+        body { background: none; padding: 0; }
+        .letter-page { width: auto; min-height: 0; padding: 0; box-shadow: none; }
+      }
+      @page { size: A4; margin: 52pt; }
+    </style>
+  </head>
+  <body>
+    <main class="letter-page">
+      <header class="letter-header">
+        <div class="letter-sender">
+          <p class="letter-sender__name">Styve Maba</p>
+          <p class="letter-sender__detail">Pointe-Noire, République du Congo</p>
+          <p class="letter-sender__detail">(+242) 06 515 23 74</p>
+          <p class="letter-sender__detail">kaiserstyve2@gmail.com</p>
+          <p class="letter-sender__detail">linkedin.com/in/kaiser-styve</p>
+        </div>
+        <div class="letter-recipient">
+          <img class="letter-recipient__logo" src="assets/gmu-logo.png" alt="Giovani &amp; Mamie University" />
+          <strong>À l’attention du jury d’admission</strong>
+          Institut Supérieur Polytechnique<br />
+          Giovani &amp; Mamie University (GMU)<br />
+          Pointe-Noire, République du Congo
+        </div>
+      </header>
+
+      <p class="letter-object">
+        Objet : Candidature à une admission en troisième année – Génie logiciel, filière <span style="white-space: nowrap">Développement Full-Stack</span>
+      </p>
+
+      <div class="letter-body">
+        <p>Madame, Monsieur les membres du jury,</p>
+
+        <p>
+          Développeur informatique professionnel depuis plusieurs années, je souhaite intégrer l’Institut Supérieur Polytechnique de Giovani &amp; Mamie University, au sein de la formation en Génie logiciel, filière Développement Full-Stack. Cette candidature s’inscrit dans une démarche de reconversion académique vers un domaine dans lequel j’ai progressivement construit mon parcours professionnel et acquis une expérience significative.
+        </p>
+
+        <p>
+          Mon parcours universitaire a débuté à l’Université Marien Ngouabi, où j’ai validé quatre semestres en sciences économiques. Cette formation m’a permis d’acquérir des bases académiques en mathématiques, en statistiques et en anglais. J’y ai également suivi un enseignement d’Initiation à l’informatique, qui témoigne de mon premier contact académique avec cette discipline. Ces acquis constituent une partie de mon parcours et s’inscrivent dans la continuité de mon orientation professionnelle actuelle.
+        </p>
+
+        <p>
+          J’ai ensuite choisi de m’orienter vers l’informatique, un domaine qui correspond davantage à mes aptitudes, à mes centres d’intérêt et à mes ambitions. Ce choix s’est concrétisé par plusieurs années d’expérience dans le développement d’applications web et mobiles. Mes activités professionnelles m’ont notamment amené à intervenir dans l’analyse des besoins, la conception technique, le développement d’interfaces et de services applicatifs, la gestion de bases de données, la maintenance et la résolution de problèmes en production. J’ai également acquis de l’expérience dans le suivi et la conduite de projets informatiques.
+        </p>
+
+        <p>
+          Cette évolution m’a permis de développer des compétences pratiques et une compréhension globale du cycle de vie des applications. Elle m’a également convaincu de l’importance de consolider cette expérience par des connaissances théoriques et méthodologiques approfondies. Ma démarche ne consiste donc pas à découvrir un nouveau domaine professionnel, mais à structurer et à approfondir les compétences acquises par la pratique au moyen d’une formation spécialisée en génie logiciel.
+        </p>
+
+        <p>
+          Le choix de la filière Développement Full-Stack s’inscrit directement dans cette continuité. Je souhaite renforcer ma maîtrise des méthodes de conception et de développement logiciel, approfondir les fondements scientifiques de ma discipline et poursuivre mon évolution professionnelle sur des bases académiques solides. Par ailleurs, conscient de la place importante accordée à l’anglais dans votre approche pédagogique, je suis disposé à mobiliser les acquis développés durant mon parcours universitaire pour répondre aux exigences de la formation.
+        </p>
+
+        <p>
+          Au regard de mon parcours académique et de mon expérience professionnelle, je sollicite l’examen de mon dossier en vue d’une admission en troisième année. Je souhaite que le jury puisse apprécier l’ensemble de mes acquis, à travers mes relevés de notes, mon expérience professionnelle et les responsabilités exercées. Je reste également disposé à satisfaire à toute évaluation complémentaire que votre établissement jugerait nécessaire.
+        </p>
+
+        <p>
+          Intégrer votre établissement représenterait une étape importante dans mon projet : consolider mon expérience par une formation diplômante en adéquation avec mon domaine d’activité et poursuivre mon évolution dans la conception et le développement de solutions logicielles.
+        </p>
+
+        <p>
+          Sérieux, autonome et engagé dans une démarche d’apprentissage continu, je suis prêt à m’investir pleinement dans cette formation et à répondre aux exigences académiques de votre établissement.
+        </p>
+
+        <p>
+          Je vous remercie de l’attention portée à ma candidature et vous prie d’agréer, Madame, Monsieur les membres du jury, l’expression de ma considération distinguée.
+        </p>
+      </div>
+
+      <footer class="letter-sign">
+        <p>Pointe-Noire, le 10 octobre 2026</p>
+        <p class="letter-sign__name">Styve Maba</p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -5,16 +5,18 @@
     display: block;
   }
 
-  .preview-toolbar {
+  .preview-toolbar,
+  .cv-page-guides {
     display: none !important;
   }
 
   .cv-page {
     width: 210mm;
-    height: 297mm;
-    max-height: 297mm;
+    height: auto;
+    max-height: none;
+    min-height: 297mm;
     margin: 0;
-    overflow: hidden;
+    overflow: visible;
     background: var(--color-page-bg);
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -23,8 +25,9 @@
   .cv-page.cv--dense {
     height: auto;
     max-height: none;
-    min-height: 297mm;
+    min-height: calc(297mm * var(--dense-page-count, 1));
     overflow: visible;
+    background: var(--color-page-bg);
   }
 
   .cv-page.cv--dense.cv-page--clip {
@@ -48,25 +51,23 @@
     text-decoration: none;
   }
 
-  .experience-card {
+  .experience-card,
+  .cv-page.cv--dense .skill-block,
+  .cv-page.cv--dense #projects-section,
+  .cv-page.cv--dense #education-section,
+  .cv-page.cv--dense #formations-section {
     page-break-inside: avoid;
     break-inside: avoid;
   }
 
-  .cv-page.cv--dense .cv-section:has(#education-container),
-  .cv-page.cv--dense #education-section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  .cv-page.cv--dense #education-section .section-label {
+  .cv-page.cv--dense #projects-section .section-label,
+  .cv-page.cv--dense #education-section .section-label,
+  .cv-page.cv--dense #formations-section .section-label {
     break-after: avoid;
     page-break-after: avoid;
   }
 
-  .stat-badge,
   .contact-item__icon,
-  .hobby-icon,
   .experience-card__badge,
   .identity__blob {
     -webkit-print-color-adjust: exact;

@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 
 const EXPORT_STYLES = `
-  .preview-toolbar { display: none !important; }
+  .preview-toolbar,
+  .cv-page-guides { display: none !important; }
   html, body {
     margin: 0 !important;
     padding: 0 !important;
@@ -46,6 +47,11 @@ export async function exportCvPdf(page, { baseUrl, variant, lang, outPath }) {
     });
     await page.addStyleTag({ content: DENSE_UNCLIP_STYLES });
     await page.emulateMedia({ media: 'print' });
+    await page.waitForTimeout(150);
+    await page.evaluate(async () => {
+      const mod = await import(`${window.location.origin}/js/dense-page-breaks.mjs`);
+      mod.alignDensePageBreaks();
+    });
     await page.pdf({
       path: outPath,
       format: 'A4',

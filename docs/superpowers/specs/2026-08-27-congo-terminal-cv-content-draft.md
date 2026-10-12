@@ -43,11 +43,11 @@ linkedin.com/in/kaiser-styve · github.com/ksthecrowned
 
 ### Profil
 
-Ingénieur logiciel Full-Stack avec plus de 5 ans d’expérience : conception, développement, refonte et évolution de systèmes web et mobiles en production.
+Ingénieur Full-Stack avec plus de 5 ans d’expérience sur des systèmes en production : reprise de legacy, fiabilité, intégrations et pilotage de projets.
 
-Parcours alliant produits from scratch, reprise de legacy peu documenté, consulting et pilotage de projets — SaaS, e-commerce à fort trafic, fintech, médias, mobilité, applications métier et intégration logiciel–matériel (TPE, NFC, périphériques).
+Spécialisé dans les applications métier et l’intégration logiciel-matériel (TPE, NFC, périphériques), avec un parcours en mobilité, fintech, e-commerce et médias.
 
-Intervention sur le cycle de vie complet (besoin → production), avec focus architecture, fiabilité, intégrations et évolution de l’existant — profil adapté aux enjeux SI / digital ops d’un environnement industriel et opérationnel.
+Je vise à renforcer les systèmes d’information et les projets digitaux de Congo Terminal, de l’analyse du besoin à l’exploitation opérationnelle.
 
 ### Compétences
 
@@ -61,7 +61,7 @@ Intervention sur le cycle de vie complet (besoin → production), avec focus arc
 
 **Gestion de projet & leadership** — pilotage ; coordination technique ; besoins ; encadrement ; revue de code ; suivi de production ; liaison tech/métier.
 
-**IA (secondaire)** — LLM / assistants ; prompt engineering ; Cursor, Copilot, Aider ; automatisation de tâches techniques.
+**IA & automatisation** — intégration de fonctionnalités IA ; LLM et assistants ; prompt engineering ; développement assisté (Cursor, GitHub Copilot, Aider) ; modèles locaux (Ollama) ; automatisation de tâches techniques.
 
 **Langues** — Français : maternelle · Anglais : courant à l’écrit, conversationnel à l’oral.
 
@@ -73,6 +73,7 @@ Intervention sur le cycle de vie complet (besoin → production), avec focus arc
 Pilotage de deux produits : plateforme de mobilité/livraison et application fintech évoluée vers un **système fermé de paiement par carte**.
 
 - Reprise et modernisation de systèmes legacy peu documentés (analyse, architecture, optimisation).
+- Refonte de l’architecture de la plateforme de mobilité et de livraison.
 - Évolution full-stack (mobile, backend, web) ; communication temps réel via **SSE**.
 - Développement logiciel TPE : NFC / sans contact, piste magnétique, insertion ; intégration imprimantes thermiques.
 - Analyse des besoins, conception, pilotage développement / intégration / tests / préparation déploiement ; coordination technique.
@@ -90,10 +91,10 @@ Consulting parallèle Webtinix / XKS Group sur projets web et mobiles.
 
 **Stack :** React, Next.js, TypeScript, Node.js, NestJS, Symfony, PHP, WordPress, PrestaShop.
 
-#### Webtinix — Front-End → Team Lead → Adjoint au Directeur Technique  
+#### Webtinix — Développeur Front-End puis Adjoint au Directeur Technique  
 **Septembre 2021 — Octobre 2023**
 
-- Conception/développement web & mobile (from scratch, SaaS, e-commerce, sites vitrines) ; APIs et services tiers ; mise en prod et maintenance.
+- Conception et développement de produits web et mobiles (SaaS, e-commerce, sites vitrines) ; intégration d’API et mise en production.
 - Leadership : encadrement, coordination, revues de code, qualité des livraisons, décisions techniques.
 - **Team Lead Developer** — fév. 2022 – fév. 2023 · **Adjoint au DT** — mars 2023 – oct. 2023.
 
@@ -103,9 +104,9 @@ Consulting parallèle Webtinix / XKS Group sur projets web et mobiles.
 
 **TimeGate** — SaaS RH / contrôle d’accès : présences, face ID, PIN, NFC, gestion d’appareils, admin web, automatisation RH (mobile + backend + admin).
 
-**Paradis Immobilier** — plateforme web de présentation et gestion de biens.
+**Paradis Immobilier** — plateforme de gestion immobilière : dashboard web et application mobile.
 
-**StoryForge** — création de contenus Markdown, offline-first, assistance IA.
+**StoryForge** — studio d’écriture offline-first pour concevoir, écrire et étendre des univers narratifs avec l’IA.
 
 ### Formation
 
@@ -114,7 +115,9 @@ Consulting parallèle Webtinix / XKS Group sur projets web et mobiles.
 
 ### Certifications
 
-Complete Web Developer (ZTM) · Advanced CSS & Sass (Udemy) · Ethical Hacking From Scratch (Udemy)
+- Complete Web Developer — Zero To Mastery
+- Advanced CSS & Sass (Flexbox, Grid, Animations) — Udemy
+- Learn Ethical Hacking From Scratch — Udemy
 
 ---
 

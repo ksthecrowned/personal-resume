@@ -2,45 +2,17 @@
   "variants": [
     {
       "id": "default",
-      "label": "CV par défaut — Full-Stack",
-      "targetRole": "Ingénieur Full-Stack & Lead Technique",
-      "createdAt": "2026-06-17",
+      "label": "CV par défaut — Développeur Full-Stack",
+      "targetRole": "Développeur Full-Stack",
+      "createdAt": "2026-10-12",
       "previewUrl": "/?variant=default&lang=fr"
     },
     {
-      "id": "charge-it-dev-web",
-      "label": "Chargé IT & Développement Web — Pointe-Noire",
-      "targetRole": "Chargé IT & Développement Web",
-      "createdAt": "2026-06-17",
-      "previewUrl": "/?variant=charge-it-dev-web&lang=fr"
-    },
-    {
-      "id": "responsable-it",
-      "label": "Responsable IT — Cofina Congo",
-      "targetRole": "Responsable Informatique",
-      "createdAt": "2026-07-03",
-      "previewUrl": "/?variant=responsable-it&lang=fr"
-    },
-    {
-      "id": "dev-web-ecommerce",
-      "label": "Développeur Web — E-commerce & Marketplace",
-      "targetRole": "Développeur Web",
-      "createdAt": "2026-07-25",
-      "previewUrl": "/?variant=dev-web-ecommerce&lang=fr"
-    },
-    {
-      "id": "formateur-technologie",
-      "label": "Formateur Technologie — Enseignement supérieur",
-      "targetRole": "Formateur en Technologie",
-      "createdAt": "2026-07-25",
-      "previewUrl": "/?variant=formateur-technologie&lang=fr"
-    },
-    {
-      "id": "congo-terminal",
-      "label": "Congo Terminal — SI & projets",
-      "targetRole": "Ingénieur Full-Stack · Systèmes d’information & projets",
-      "createdAt": "2026-08-27",
-      "previewUrl": "/?variant=congo-terminal&lang=fr"
+      "id": "gmu",
+      "label": "Admission GMU — Génie logiciel, Développement Full-Stack",
+      "targetRole": "Admission GMU — Génie logiciel",
+      "createdAt": "2026-10-10",
+      "previewUrl": "/?variant=gmu&lang=fr"
     }
   ]
 }

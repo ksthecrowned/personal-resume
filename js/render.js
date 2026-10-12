@@ -1,4 +1,4 @@
-import { layoutCssClasses } from "./layout-flags.mjs";
+import { layoutCssClasses, normalizeLayout } from "./layout-flags.mjs";
 
 function escapeHtml(str) {
   return String(str)
@@ -47,12 +47,11 @@ function resolveLocaleContent(variantData, locale) {
       },
       identity: variantData.identity || { name: "Styve Maba" },
       profile: variantData.profile || {},
-      stats: variantData.stats || [],
       contacts: variantData.contacts || [],
       skills: variantData.skills || [],
-      hobbies: variantData.hobbies || [],
       education: variantData.education || [],
       certifications: variantData.certifications || [],
+      personalProjects: variantData.personalProjects || [],
       experiences: variantData.experiences || [],
       _locale: locale,
     };
@@ -96,10 +95,10 @@ async function loadVariantData(slug) {
   };
 }
 
-function applySectionLabels(i18n) {
+function applySectionLabels(i18n, overrides) {
   document.querySelectorAll("[data-section]").forEach((el) => {
     const key = el.dataset.section;
-    const label = i18n.sections?.[key];
+    const label = overrides?.[key] || i18n.sections?.[key];
     if (label) el.textContent = label;
   });
 }
@@ -126,34 +125,39 @@ function applyLayout(layout) {
   const layoutClasses = [
     "cv--dense",
     "cv--hide-photo",
-    "cv--hide-hobbies",
-    "cv--hide-stats",
+    "cv--align-education-formations",
+    "cv--standard-type",
   ];
   for (const cls of layoutClasses) page.classList.remove(cls);
   for (const cls of layoutCssClasses(layout)) page.classList.add(cls);
+
+  const flags = normalizeLayout(layout);
+  page.dataset.alignEducationFormations = flags.alignEducationWithFormations
+    ? "1"
+    : "";
+  page.dataset.formationsUnderSkills = flags.formationsUnderSkills ? "1" : "";
+
+  placeFormationsSection(layout);
 }
 
-function renderStats(stats) {
-  if (!stats?.length) return "";
-  return stats
-    .map((stat) => {
-      if (stat.type === "accent") {
-        return '<div class="stat-badge stat-badge--orange" aria-hidden="true"></div>';
-      }
-      const colorClass =
-        stat.color === "gray"
-          ? "stat-badge--gray"
-          : stat.color === "orange"
-            ? "stat-badge--orange"
-            : "stat-badge--purple";
-      return `
-        <div class="stat-badge ${colorClass}">
-          <div class="stat-badge__value">${escapeHtml(stat.value)}</div>
-          <div class="stat-badge__label">${escapeHtml(stat.label)}</div>
-        </div>
-      `;
-    })
-    .join("");
+function placeFormationsSection(layout) {
+  const formations = document.getElementById("formations-section");
+  const skills = document.getElementById("skills-section");
+  const education = document.getElementById("education-section");
+  if (!formations || !skills) return;
+
+  const { formationsUnderSkills } = normalizeLayout(layout);
+  if (formationsUnderSkills) {
+    skills.after(formations);
+    return;
+  }
+
+  if (education) {
+    education.after(formations);
+    return;
+  }
+
+  document.querySelector(".col-right")?.appendChild(formations);
 }
 
 function renderContact(contact) {
@@ -175,35 +179,42 @@ function renderContacts(contacts) {
   return (contacts || []).map(renderContact).join("");
 }
 
-function renderHobbies(hobbies) {
-  return (hobbies || [])
-    .map(
-      (hobby) => `
-    <li>
-      <img class="hobby-icon" src="assets/icons/${escapeHtml(hobby.icon)}" alt="" width="157" height="137" />
-      <span class="hobby-label">${escapeHtml(hobby.label)}</span>
-    </li>
-  `,
-    )
-    .join("");
-}
+const EDUCATION_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>`;
 
 function renderEducation(education) {
   return (education || [])
-    .map(
-      (item) => `
-    <div class="edu-item">
-      <p class="edu-item__title">${escapeHtml(item.title)}</p>
-      <p class="edu-item__place">${escapeHtml(item.place)}</p>
+    .map((item) => {
+      const bottom = [item.period, item.place].filter(Boolean).join(" · ");
+      const icon = item.period
+        ? `<span class="edu-item__icon">${EDUCATION_ICON}</span>`
+        : "";
+      return `
+    <div class="edu-item${item.period ? " edu-item--icon" : ""}">
+      ${icon}
+      <div class="edu-item__body">
+        <p class="edu-item__title">${escapeHtml(item.title)}</p>
+        <p class="edu-item__place">${escapeHtml(bottom)}</p>
+      </div>
     </div>
-  `,
-    )
+  `;
+    })
     .join("");
 }
 
 function renderCertifications(certs) {
   return (certs || [])
-    .map((cert) => `<li class="cert-list__item">${escapeHtml(cert)}</li>`)
+    .map((cert) => {
+      if (typeof cert === "string") {
+        return `<li class="cert-list__item">${escapeHtml(cert)}</li>`;
+      }
+      const bottom = [cert.period, cert.place].filter(Boolean).join(" · ");
+      return `
+        <li class="cert-list__item">
+          <p class="edu-item__title">${escapeHtml(cert.title || "")}</p>
+          ${bottom ? `<p class="edu-item__place">${escapeHtml(bottom)}</p>` : ""}
+        </li>
+      `;
+    })
     .join("");
 }
 
@@ -211,6 +222,31 @@ function renderList(items, className) {
   if (!items?.length) return "";
   const lis = items.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
   return `<ul class="${className}">${lis}</ul>`;
+}
+
+function renderProjects(projects) {
+  if (!projects?.length) return "";
+  const lis = projects
+    .map((project) => {
+      if (typeof project === "string") {
+        return `<li class="project-list__item">${escapeHtml(project)}</li>`;
+      }
+      const nameHtml = project.url
+        ? `<a href="${escapeHtml(project.url)}" target="_blank" rel="noopener">${escapeHtml(project.name || "")}</a>`
+        : `<strong>${escapeHtml(project.name || "")}</strong>`;
+      if (project.tagline) {
+        const description = project.description
+          ? `<p class="project-list__desc">${escapeHtml(project.description)}</p>`
+          : "";
+        return `<li class="project-list__item"><p class="project-list__title">${nameHtml} — ${escapeHtml(project.tagline)}</p>${description}</li>`;
+      }
+      const description = project.description
+        ? ` — ${escapeHtml(project.description)}`
+        : "";
+      return `<li class="project-list__item">${nameHtml}${description}</li>`;
+    })
+    .join("");
+  return lis;
 }
 
 function renderClients(clients) {
@@ -257,7 +293,7 @@ function renderExperience(exp, labels) {
     blocks += `<p class="experience-card__label">${escapeHtml(labels.experience.clients)}</p>${renderClients(exp.clients)}`;
   }
   if (exp.projects?.length) {
-    blocks += `<p class="experience-card__label">${escapeHtml(labels.experience.projects)}</p>${renderList(exp.projects, "experience-card__list")}`;
+    blocks += `<p class="experience-card__label">${escapeHtml(labels.experience.projects)}</p><ul class="experience-card__list experience-card__projects">${renderProjects(exp.projects)}</ul>`;
   }
   if (exp.evolutions?.length) {
     blocks += `<p class="experience-card__label">${escapeHtml(labels.experience.evolutions)}</p>${renderList(exp.evolutions, "experience-card__list")}`;
@@ -299,11 +335,11 @@ function showError(container, message) {
 async function loadCv() {
   const slug = getVariantSlug();
   const containers = {
-    stats: document.getElementById("stats-container"),
     contacts: document.getElementById("contacts-container"),
     skills: document.getElementById("skills-container"),
-    hobbies: document.getElementById("hobbies-container"),
     experiences: document.getElementById("experiences-container"),
+    projects: document.getElementById("projects-container"),
+    projectsSection: document.getElementById("projects-section"),
     education: document.getElementById("education-container"),
     certifications: document.getElementById("certifications-container"),
   };
@@ -317,11 +353,9 @@ async function loadCv() {
 
     document.documentElement.lang = locale;
     applyMeta(content.meta);
-    applySectionLabels(i18n);
+    applySectionLabels(i18n, content.sections);
     applyIdentity(content.identity, content.profile);
 
-    if (containers.stats)
-      containers.stats.innerHTML = renderStats(content.stats);
     if (containers.contacts)
       containers.contacts.innerHTML = renderContacts(content.contacts);
     if (containers.skills) {
@@ -329,8 +363,6 @@ async function loadCv() {
         .map(renderSkillBlock)
         .join("");
     }
-    if (containers.hobbies)
-      containers.hobbies.innerHTML = renderHobbies(content.hobbies);
     if (containers.education)
       containers.education.innerHTML = renderEducation(content.education);
     if (containers.certifications) {
@@ -343,6 +375,18 @@ async function loadCv() {
         .map((exp) => renderExperience(exp, i18n))
         .join("");
     }
+    if (containers.projects && containers.projectsSection) {
+      const projects = content.personalProjects || [];
+      if (projects.length) {
+        containers.projects.innerHTML = renderProjects(projects);
+        containers.projectsSection.hidden = false;
+      } else {
+        containers.projects.innerHTML = "";
+        containers.projectsSection.hidden = true;
+      }
+    }
+
+    window.dispatchEvent(new CustomEvent("cv:rendered", { detail: { slug, locale } }));
   } catch {
     showError(
       containers.experiences,

@@ -2,32 +2,80 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
     <title>Styve Maba — CV</title>
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/print.css" />
   </head>
   <body>
-    <div class="preview-toolbar" aria-label="Outils de prévisualisation">
-      <div class="preview-toolbar__group">
-        <label class="preview-toolbar__label" for="variant-select">Poste</label>
-        <select class="preview-toolbar__select" id="variant-select"></select>
+    <header class="preview-toolbar" aria-label="Outils de prévisualisation">
+      <div class="preview-toolbar__fields">
+        <div class="preview-field" id="variant-select">
+          <button type="button" class="preview-dropdown__trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="variant-menu">
+            <svg class="preview-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" />
+              <path d="M3 12h18" />
+            </svg>
+            <span class="preview-field__meta">
+              <span class="preview-field__name" id="variant-label">Poste</span>
+              <span class="preview-dropdown__value"></span>
+            </span>
+            <svg class="preview-dropdown__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <ul class="preview-dropdown__menu" id="variant-menu" role="listbox" aria-labelledby="variant-label" hidden></ul>
+        </div>
+        <div class="preview-field" id="lang-select">
+          <button type="button" class="preview-dropdown__trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu">
+            <svg class="preview-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M3 12h18" />
+              <path d="M12 3c2.6 2.7 2.6 15.3 0 18" />
+              <path d="M12 3c-2.6 2.7-2.6 15.3 0 18" />
+            </svg>
+            <span class="preview-field__meta">
+              <span class="preview-field__name" id="lang-label">Langue</span>
+              <span class="preview-dropdown__value"></span>
+            </span>
+            <svg class="preview-dropdown__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <ul class="preview-dropdown__menu" id="lang-menu" role="listbox" aria-labelledby="lang-label" hidden></ul>
+        </div>
       </div>
-      <div class="preview-toolbar__group">
-        <label class="preview-toolbar__label" for="lang-select">Langue</label>
-        <select class="preview-toolbar__select" id="lang-select"></select>
+      <div class="preview-toolbar__actions">
+        <button
+          type="button"
+          class="preview-toolbar__btn"
+          id="clip-toggle"
+          aria-pressed="true"
+          aria-label="Rognage A4 activé"
+        >
+          <svg class="preview-toolbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 8V5a1 1 0 011-1h3" />
+            <path d="M16 4h3a1 1 0 011 1v3" />
+            <path d="M20 16v3a1 1 0 01-1 1h-3" />
+            <path d="M8 20H5a1 1 0 01-1-1v-3" />
+            <rect x="8" y="8" width="8" height="8" rx="1" />
+          </svg>
+          <span class="preview-toolbar__btn-label">Rognage A4</span>
+          <span class="preview-toolbar__status" data-clip-state>activé</span>
+        </button>
+        <button type="button" class="preview-toolbar__btn preview-toolbar__btn--download" id="download-cv">
+          <svg class="preview-toolbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 4v11" />
+            <path d="M7 11l5 5 5-5" />
+            <path d="M5 20h14" />
+          </svg>
+          <span class="preview-toolbar__btn-label">Télécharger</span>
+        </button>
       </div>
-      <button
-        type="button"
-        class="preview-toolbar__btn"
-        id="clip-toggle"
-        aria-pressed="true"
-      >
-        Rognage A4 : activé
-      </button>
-    </div>
-    <main class="cv-page cv-page--clip" id="cv-page">
+    </header>
+    <main class="cv-page" id="cv-page">
       <aside class="col-left">
         <section class="cv-section cv-section--profile">
           <h2 class="section-label" data-section="profile"></h2>
@@ -51,23 +99,14 @@
             <p class="profile-text" id="profile-summary"></p>
           </div>
 
-          <div class="stats-row" id="stats-container"></div>
-
           <div class="cv-card cv-card--contacts">
             <div class="contacts" id="contacts-container"></div>
           </div>
         </section>
 
-        <section class="cv-section">
+        <section class="cv-section" id="skills-section">
           <h2 class="section-label" data-section="skills"></h2>
           <div class="cv-card cv-card--skills" id="skills-container"></div>
-        </section>
-
-        <section class="cv-section" id="hobbies-section">
-          <h2 class="section-label" data-section="hobbies"></h2>
-          <div class="cv-card cv-card--hobbies">
-            <ul class="hobbies-list" id="hobbies-container"></ul>
-          </div>
         </section>
       </aside>
 
@@ -76,6 +115,13 @@
           <h2 class="section-label" data-section="experience"></h2>
           <div class="cv-card cv-card--experience">
             <div id="experiences-container"></div>
+          </div>
+        </section>
+
+        <section class="cv-section" id="projects-section" hidden>
+          <h2 class="section-label" data-section="personalProjects"></h2>
+          <div class="cv-card cv-card--projects">
+            <ul class="project-list" id="projects-container"></ul>
           </div>
         </section>
 
